@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>The Oscars 2015</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<div id="header">
+			<img id="header_logo" src="img/header_logo.jpg">
+			<!-- <div id="header_slogan">
+				<h1> </h1>
+				<p style="color:#F0F0F0; font-size:18px;"><b>
+					<span>Forschritt:</span>
+					<span id="header_progress_bester_film" class="header_progress">></span>
+					<span id="header_progress_beste_regie" class="header_progress">></span>
+					<span id="header_progress_bester_hauptdarsteller" class="header_progress">></span>
+					<span id="header_progress_beste_hauptdarstellerin" class="header_progress">></span>
+					<span id="header_progress_bester_nebendarsteller" class="header_progress">></span>
+					<span id="header_progress_beste_nebendarstellerin" class="header_progress">></span>
+					<span id="header_progress_bestes_original_drehbuch" class="header_progress">></span>
+					<span id="header_progress_bestes_adaptiertes_drehbuch" class="header_progress">></span>
+					<span id="header_progress_bester_animationsfilm" class="header_progress">></span>
+					<span id="header_progress_bester_nicht_englischsprachiger_film" class="header_progress">></span>
+					<span id="header_progress_bester_dokumentarfilm" class="header_progress">></span>
+					<span id="header_progress_beste_kamera" class="header_progress">></span>
+					<span id="header_progress_bester_schnitt" class="header_progress">></span>
+					<span id="header_progress_bestes_produktionsdesign" class="header_progress">></span>
+					<span id="header_progress_bestes_kostuemdesign" class="header_progress">></span>
+					<span id="header_progress_bestes_makeup_und_hairstyling" class="header_progress">></span>
+					<span id="header_progress_beste_visuelle_effekte" class="header_progress">></span>
+					<span id="header_progress_bester_score" class="header_progress">></span>
+					<span id="header_progress_bester_filmsong" class="header_progress">></span>
+					<span id="header_progress_beste_tonmischung" class="header_progress">></span>
+					<span id="header_progress_bester_tonschnitt" class="header_progress">></span>
+					<span id="header_progress_bester_kurzfilm" class="header_progress">></span>
+					<span id="header_progress_bester_dokumentar_kurzfilm" class="header_progress">></span>
+					<span id="header_progress_bester_animations_kurzfilm" class="header_progress">></span>
+				</b></p>
+			</div> -->
+		</div>
+		<!-- WRAPPER -->
+		<div id="wrapper">
+			<!-- SIDEBAR -->
+			<div id="sidebar">
+				<h3>Kategorien</h3>
+				<p style="margin:4px;">
+					<a><span id="sidebar_bester_film" class="sidebar_link">Bester Film</span></a>
+					<a><span id="sidebar_beste_regie" class="sidebar_link">Beste Regie</span></a>
+					<a><span id="sidebar_bester_hauptdarsteller" class="sidebar_link">Bester Hauptdarsteller</span></a>
+					<a><span id="sidebar_beste_hauptdarstellerin" class="sidebar_link">Beste Hauptdarstellerin</span></a>
+					<a><span id="sidebar_bester_nebendarsteller" class="sidebar_link">Bester Nebendarsteller</span></a>
+					<a><span id="sidebar_beste_nebendarstellerin" class="sidebar_link">Beste Nebendarstellerin</span></a>
+					<a><span id="sidebar_bestes_original_drehbuch" class="sidebar_link">Bestes Originaldrehbuch</span></a>
+					<a><span id="sidebar_bestes_adaptiertes_drehbuch" class="sidebar_link">Bestes adaptiertes Drehbuch</span></a>
+					<a><span id="sidebar_bester_animationsfilm" class="sidebar_link">Bester Animationsfilm</span></a>
+					<a><span id="sidebar_bester_nicht_englischsprachiger_film" class="sidebar_link">Bester nicht-englischsprachiger Film</span></a>
+					<a><span id="sidebar_bester_dokumentarfilm" class="sidebar_link">Bester Dokumentarfilm</span></a>
+					<a><span id="sidebar_beste_kamera" class="sidebar_link">Beste Kamera</span></a>
+					<a><span id="sidebar_bester_schnitt" class="sidebar_link">Bester Schnitt</span></a>
+					<a><span id="sidebar_bestes_produktionsdesign" class="sidebar_link">Bestes Produktionsdesign</span></a>
+					<a><span id="sidebar_bestes_kostuemdesign" class="sidebar_link">Bestes Kostümdesign</span></a>
+					<a><span id="sidebar_bestes_makeup_und_hairstyling" class="sidebar_link">Bestes Make-up und Hairstyling</span></a>
+					<a><span id="sidebar_beste_visuelle_effekte" class="sidebar_link">Beste visuelle Effekte</span></a>
+					<a><span id="sidebar_bester_score" class="sidebar_link">Beste Score</span></a>
+					<a><span id="sidebar_bester_filmsong" class="sidebar_link">Bester Filmsong</span></a>
+					<a><span id="sidebar_beste_tonmischung" class="sidebar_link">Beste Tonmischung</span></a>
+					<a><span id="sidebar_bester_tonschnitt" class="sidebar_link">Bester Tonschnitt</span></a>
+					<a><span id="sidebar_bester_kurzfilm" class="sidebar_link">Bester Kurzfilm</span></a>
+					<a><span id="sidebar_bester_dokumentar_kurzfilm" class="sidebar_link">Bester Dokumentar-Kurzfilm</span></a>
+					<a><span id="sidebar_bester_animations_kurzfilm" class="sidebar_link">Bester Animations-Kurzfilm</span></a>
+				</p>
+				<div id="sidebar_wahl">
+					<h3 style="padding-top:4px;">Deine Wahl</h3>
+				</div>
+				<div id="sidebar_submit">
+					<h3 style="padding-top:4px;">Absenden</h3>
+				</div>
+				<!-- FOOTER -->
+				<div id="footer">
+					<p><span id="footer_company">PalaProdCorp</span> <span id="footer_copyright">&copy;2015</span></p>
+					<p><span id="footer_created_by">created by Chilldebert</span></p> 
+				</div>
+			</div>
+			<!-- WELCOME -->
+			<div id="welcome">
+				<h1>Oscar-Gewinnspiel 2015</h1>
+				<img src="img/welcome_img_1.jpg">
+				<p>
+					Willkommen <b><span class="welcome_user"></span></b>, zum Oscar-Gewinnspiel 2015 präsentiert von PalaProdCorp.<br />
+					Auch in diesem Jahr ist der begehrte Goldjunge ein heiß diskutiertes Thema. Wer wird die meistens Oscars mit nach Hause nehmnen können? Oder wer ist der große Verlierer des Abends?<br />
+					Sei auch du dabei und wähle deine persönlichen Favoriten im Rennen um die Oscars!
+				</p>
+			</div>
+			<!-- MAIN -->
+			<div id="main">
+				<!-- BESTER FILM -->
+				<div id="main_bester_film" class="main_content">
+					<div id="main_bester_film_boyhood" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/boyhood.jpg">
+						
+					</div>
+					<div id="main_bester_film_birdman" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/birdman.jpg">
+					</div>
+					<div id="main_bester_film_imitationgame" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/imitation_game.jpg">
+					</div>
+					<div id="main_bester_film_selma" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/selma.jpg">
+					</div>
+					<div id="main_bester_film_grandbudapesthotel" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/grand_budapest_hotel.jpg">
+					</div>
+					<div id="main_bester_film_entdeckungderunendlichkeit" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/entdeckung_der_unendlichkeit.jpg">
+					</div>
+					<div id="main_bester_film_whiplash" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/whiplash.jpg">
+					</div>
+					<div id="main_bester_film_americansniper" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/american_sniper.jpg">
+					</div>
+				</div>
+				<!-- BESTE REGIE -->
+				<div id="main_beste_regie" class="main_content">
+					<div id="main_beste_regie_boyhood" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/richard_linklater.jpg">
+					</div>
+					<div id="main_beste_regie_birdman" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/inarritu.jpg">
+					</div>
+					<div id="main_beste_regie_imitationgame" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/morten_tyldum.jpg">
+					</div>
+					<div id="main_beste_regie_foxcatcher" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/bennett_miller.jpg">
+					</div>
+					<div id="main_beste_regie_grandbudapesthotel" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/wes_anderson.jpg">
+					</div>
+				</div>
+				<!-- BESTER HAUPTDARSTELLER-->
+				<div id="main_bester_hauptdarsteller" class="main_content">
+					<div id="main_bester_hauptdarsteller_birdman" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/michael_keaton.jpg">
+					</div>
+					<div id="main_bester_hauptdarsteller_imitationgame" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/benedict_cumberbatch.jpg">
+					</div>
+					<div id="main_bester_hauptdarsteller_entdeckungderunendlichkeit" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/eddie_redmayne.jpg">
+					</div>
+					<div id="main_bester_hauptdarsteller_americansniper" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/bradley_cooper.jpg">
+					</div>
+					<div id="main_bester_hauptdarsteller_foxcatcher" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/steve_carell.jpg">
+					</div>
+				</div>
+				<!-- BESTE HAUPTDARSTELLERIN -->
+				<div id="main_beste_hauptdarstellerin" class="main_content">
+					<div id="main_beste_hauptdarstellerin_stillalice" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/julianne_moore.jpg">
+					</div>
+					<div id="main_beste_hauptdarstellerin_grossetrip" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/reese_witherspoon.jpg">
+					</div>
+					<div id="main_beste_hauptdarstellerin_entdeckungderunendlichkeit" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/felicity_jones.jpg">
+					</div>
+					<div id="main_beste_hauptdarstellerin_zweitageeinenacht" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/marion_cotillard.jpg">
+					</div>
+					<div id="main_beste_hauptdarstellerin_gonegirl" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/rosamund_pike.jpg">
+					</div>
+				</div>
+				<!-- BESTER NEBENDARSTELLER -->
+				<div id="main_bester_nebendarsteller" class="main_content">
+					<div id="main_bester_nebendarsteller_whiplash" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/jk_simmons.jpg">
+					</div>
+					<div id="main_bester_nebendarsteller_boyhood" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/ethan_hawke.jpg">
+					</div>
+					<div id="main_bester_nebendarsteller_foxcatcher" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/mark_ruffalo.jpg">
+					</div>
+					<div id="main_bester_nebendarsteller_richter" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/robert_duvall.jpg">
+					</div>
+					<div id="main_bester_nebendarsteller_birdman" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/edward_norton.jpg">
+					</div>
+				</div>
+				<!-- BESTE NEBENDARSTELLERIN -->
+				<div id="main_beste_nebendarstellerin" class="main_content">
+					<div id="main_beste_nebendarstellerin_boyhood" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/patricia_arquette.jpg">
+					</div>
+					<div id="main_beste_nebendarstellerin_intothewoods" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/meryl_streep.jpg">
+					</div>
+					<div id="main_beste_nebendarstellerin_birdman" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/emma_stone.jpg">
+					</div>
+					<div id="main_beste_nebendarstellerin_imitationgame" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/keira_knightley.jpg">
+					</div>
+					<div id="main_beste_nebendarstellerin_grossetrip" class="main_movie_card">
+						<img class="movie_poster" src="img/persons/laura_dern.jpg">
+					</div>
+				</div>
+				<!-- BESTES ORIGINAL-DREHBUCH -->
+				<div id="main_bestes_original_drehbuch" class="main_content">
+					<div id="main_bestes_original_drehbuch_boyhood" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/boyhood.jpg">
+					</div>
+					<div id="main_bestes_original_drehbuch_birdman" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/birdman.jpg">
+					</div>
+					<div id="main_bestes_original_drehbuch_grandbudapesthotel" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/grand_budapest_hotel.jpg">
+					</div>
+					<div id="main_bestes_original_drehbuch_nightcrawler" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/nightcrawler.jpg">
+					</div>
+					<div id="main_bestes_original_drehbuch_foxcatcher" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/foxcatcher.jpg">
+					</div>
+				</div>
+				<!-- BESTES ADAPTIERTES DREHBUCH -->
+				<div id="main_bestes_adaptiertes_drehbuch" class="main_content">
+					<div id="main_bestes_adaptiertes_drehbuch_imitationgame" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/imitation_game.jpg">
+					</div>
+					<div id="main_bestes_adaptiertes_drehbuch_americansniper" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/american_sniper.jpg">
+					</div>
+					<div id="main_bestes_adaptiertes_drehbuch_entdeckungderunendlichkeit" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/entdeckung_der_unendlichkeit.jpg">
+					</div>
+					<div id="main_bestes_adaptiertes_drehbuch_whiplash" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/whiplash.jpg">
+					</div>
+					<div id="main_bestes_adaptiertes_drehbuch_inherentvice" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/inherent_vice.jpg">
+					</div>
+				</div>
+				<!-- BESTER ANIMATIONSFILM -->
+				<div id="main_bester_animationsfilm" class="main_content">
+					<div id="main_bester_animationsfilm_drachenzaehmenleichtgemacht2" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/drachenzaehmen_leicht_gemacht_2.jpg">
+					</div>
+					<div id="main_bester_animationsfilm_songofthesea" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/song_of_the_sea.jpg">
+					</div>
+					<div id="main_bester_animationsfilm_baymax" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/baymax.jpg">
+					</div>
+					<div id="main_bester_animationsfilm_boxtrolls" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/boxtrolls.jpg">
+					</div>
+					<div id="main_bester_animationsfilm_legendederprinzessinkaguya" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/legende_der_prinzessin_kaguya.jpg">
+					</div>
+				</div>
+				<!-- BESTER NICHT ENGLISCHSPRACHIGER FILM -->
+				<div id="main_bester_nicht_englischsprachiger_film" class="main_content">
+					<div id="main_bester_nicht_englischsprachiger_film_wildtales" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/wild_tales.jpg">
+					</div>
+					<div id="main_bester_nicht_englischsprachiger_film_ida" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/ida.jpg">
+					</div>
+					<div id="main_bester_nicht_englischsprachiger_film_leviathan" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/leviathan.jpg">
+					</div>
+					<div id="main_bester_nicht_englischsprachiger_film_tangerines" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/tangerines.jpg">
+					</div>
+					<div id="main_bester_nicht_englischsprachiger_film_timbuktu" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/timbuktu.jpg">
+					</div>
+				</div>
+				<!-- BESTER DOKUMENTARFILM -->
+				<div id="main_bester_dokumentarfilm" class="main_content">
+					<div id="main_bester_dokumentarfilm_citizenfour" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/citizenfour.jpg">
+					</div>
+					<div id="main_bester_dokumentarfilm_findingvivianmaier" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/finding_vivian_maier.jpg">
+					</div>
+					<div id="main_bester_dokumentarfilm_lastdaysinvietnam" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/last_days_in_vietnam.jpg">
+					</div>
+					<div id="main_bester_dokumentarfilm_virunga" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/virunga.jpg">
+					</div>
+					<div id="main_bester_dokumentarfilm_salzdererde" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/salz_der_erde.jpg">
+					</div>
+				</div>
+				<!-- BESTE KAMERA -->
+				<div id="main_beste_kamera" class="main_content">
+					<div id="main_beste_kamera_birdman" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/birdman.jpg">
+					</div>
+					<div id="main_beste_kamera_unbroken" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/unbroken.jpg">
+					</div>
+					<div id="main_beste_kamera_mrturner" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/mr_turner.jpg">
+					</div>
+					<div id="main_beste_kamera_ida" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/ida.jpg">
+					</div>
+					<div id="main_beste_kamera_grandbudapesthotel" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/grand_budapest_hotel.jpg">
+					</div>
+				</div>
+				<!-- BESTER SCHNIT -->
+				<div id="main_bester_schnitt" class="main_content">
+					<div id="main_bester_schnitt_boyhood" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/boyhood.jpg">
+					</div>
+					<div id="main_bester_schnitt_americansniper" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/american_sniper.jpg">
+					</div>
+					<div id="main_bester_schnitt_grandbudapesthotel" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/grand_budapest_hotel.jpg">
+					</div>
+					<div id="main_bester_schnitt_imitationgame" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/imitation_game.jpg">
+					</div>
+					<div id="main_bester_schnitt_whiplash" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/whiplash.jpg">
+					</div>
+				</div>
+				<!-- BESTES PRODUKTIONSDESIGN -->
+				<div id="main_bestes_produktionsdesign" class="main_content">
+					<div id="main_bestes_produktionsdesign_grandbudapesthotel" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/grand_budapest_hotel.jpg">
+					</div>
+					<div id="main_bestes_produktionsdesign_mrturner" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/mr_turner.jpg">
+					</div>
+					<div id="main_bestes_produktionsdesign_intothewoods" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/into_the_woods.jpg">
+					</div>
+					<div id="main_bestes_produktionsdesign_interstellar" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/interstellar.jpg">
+					</div>
+					<div id="main_bestes_produktionsdesign_imitationgame" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/imitation_game.jpg">
+					</div>
+				</div>
+				<!-- BESTES KOSTÜMDESIGN -->
+				<div id="main_bestes_kostuemdesign" class="main_content">
+					<div id="main_bestes_kostuemdesign_intothewoods" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/into_the_woods.jpg">
+					</div>
+					<div id="main_bestes_kostuemdesign_grandbudapesthotel" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/grand_budapest_hotel.jpg">
+					</div>
+					<div id="main_bestes_kostuemdesign_maleficent" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/maleficent.jpg">
+					</div>
+					<div id="main_bestes_kostuemdesign_mrturner" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/mr_turner.jpg">
+					</div>
+					<div id="main_bestes_kostuemdesign_inherentvice" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/inherent_vice.jpg">
+					</div>
+				</div>	
+				<!-- BESTES MAKE-UP UND HAIRSTYLING -->
+				<div id="main_bestes_makeup_und_hairstyling" class="main_content">
+					<div id="main_bestes_makeup_und_hairstyling_foxcatcher" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/foxcatcher.jpg">
+					</div>
+					<div id="main_bestes_makeup_und_hairstyling_guardiansofthegalaxy" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/guardians_of_the_galaxy.jpg">
+					</div>
+					<div id="main_bestes_makeup_und_hairstyling_grandbudapesthotel" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/grand_budapest_hotel.jpg">
+					</div>
+				</div>
+				<!-- BESTE VISUELLE EFFEKTE -->
+				<div id="main_beste_visuelle_effekte" class="main_content">
+					<div id="main_beste_visuelle_effekte_interstellar" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/interstellar.jpg">
+					</div>
+					<div id="main_beste_visuelle_effekte_guardiansofthegalaxy" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/guardians_of_the_galaxy.jpg">
+					</div>
+					<div id="main_beste_visuelle_effekte_planetderaffenrevolution" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/planet_der_affen_revolution.jpg">
+					</div>
+					<div id="main_beste_visuelle_effekte_returnofthefirstavenger" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/return_of_the_first_avenger.jpg">
+					</div>
+					<div id="main_beste_visuelle_effekte_xmenzukunftistvergangenheit" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/x_men_zukunft_ist_vergangenheit.jpg">
+					</div>
+				</div>
+				<!-- BESTER SCORE -->
+				<div id="main_bester_score" class="main_content">
+					<div id="main_bester_score_imitationgame" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/imitation_game.jpg">
+					</div>
+					<div id="main_bester_score_interstellar" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/interstellar.jpg">
+					</div>
+					<div id="main_bester_score_entdeckungderunendlichkeit" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/entdeckung_der_unendlichkeit.jpg">
+					</div>
+					<div id="main_bester_score_grandbudapesthotel" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/grand_budapest_hotel.jpg">
+					</div>
+					<div id="main_bester_score_mrturner" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/mr_turner.jpg">
+					</div>
+				</div>
+				<!-- BESTER FILMSONG -->
+				<div id="main_bester_filmsong" class="main_content">
+					<div id="main_bester_filmsong_selma" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/selma.jpg">
+					</div>
+					<div id="main_bester_filmsong_canasongsaveyourlife" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/can_a_song_save_your_life.jpg">
+					</div>
+					<div id="main_bester_filmsong_glencampbellillbeme" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/glen_campbell_ill_be_me.jpg">
+					</div>
+					<div id="main_bester_filmsong_legomovie" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/lego_movie.jpg">
+					</div>
+					<div id="main_bester_filmsong_beyondthelights" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/beyond_the_lights.jpg">
+					</div>
+				</div>
+				<!-- BESTE TONMISCHUNG -->
+				<div id="main_beste_tonmischung" class="main_content">
+					<div id="main_beste_tonmischung_americansniper" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/american_sniper.jpg">
+					</div>
+					<div id="main_beste_tonmischung_whiplash" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/whiplash.jpg">
+					</div>
+					<div id="main_beste_tonmischung_unbroken" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/unbroken.jpg">
+					</div>
+					<div id="main_beste_tonmischung_interstellar" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/interstellar.jpg">
+					</div>
+					<div id="main_beste_tonmischung_birdman" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/birdman.jpg">
+					</div>
+				</div>
+				<!-- BESTER TONSCHNITT -->
+				<div id="main_bester_tonschnitt" class="main_content">
+					<div id="main_bester_tonschnitt_interstellar" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/interstellar.jpg">
+					</div>
+					<div id="main_bester_tonschnitt_unbroken" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/unbroken.jpg">
+					</div>
+					<div id="main_bester_tonschnitt_americansniper" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/american_sniper.jpg">
+					</div>
+					<div id="main_bester_tonschnitt_hobbitschlachtderfuenfheere" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/hobbit_schlacht_der_fuenf_heere.jpg">
+					</div>
+					<div id="main_bester_tonschnitt_birdman" class="main_movie_card">
+						<img class="movie_poster" src="img/movies/birdman.jpg">
+					</div>
+				</div>
+				<!-- BESTER KURZFILM -->
+				<div id="main_bester_kurzfilm" class="main_content">
+					<div id="main_bester_kurzfilm_aya" class="main_movie_card">
+						<h3>Aya</h3>
+					</div>
+					<div id="main_bester_kurzfilm_phonecall" class="main_movie_card">
+						<h3>The Phone Call</h3>
+					</div>
+					<div id="main_bester_kurzfilm_pavaneh" class="main_movie_card">
+						<h3>Pavaneh</h3>
+					</div>
+					<div id="main_bester_kurzfilm_boogalooandgraham" class="main_movie_card">
+						<h3>Boogaloo and Graham</h3>
+					</div>
+					<div id="main_bester_kurzfilm_butterlamp" class="main_movie_card">
+						<h3>Butterlamp</h3>
+					</div>
+				</div>
+				<!-- BESTER DOKUMENTAR-KURZFILM -->
+				<div id="main_bester_dokumentar_kurzfilm" class="main_content">
+					<div id="main_bester_dokumentar_kurzfilm_crisishotlineveteranspress1" class="main_movie_card">
+						<h3>Crisis Hotline: Veterans Press 1</h3>
+					</div>
+					<div id="main_bester_dokumentar_kurzfilm_thereaper" class="main_movie_card">
+						<h3>The Reaper</h3>
+					</div>
+					<div id="main_bester_dokumentar_kurzfilm_whiteearth" class="main_movie_card">
+						<h3>White Earth</h3>
+					</div>
+					<div id="main_bester_dokumentar_kurzfilm_joanna" class="main_movie_card">
+						<h3>Joanna</h3>
+					</div>
+					<div id="main_bester_dokumentar_kurzfilm_ourcurse" class="main_movie_card">
+						<h3>Our Curse</h3>
+					</div>
+				</div>
+				<!-- BESTER ANIMATIONS-KURZFILM -->
+				<div id="main_bester_animations_kurzfilm" class="main_content">
+					<div id="main_bester_animations_kurzfilm_liebegehtdurchdenmagen" class="main_movie_card">
+						<h3>Liebe geht durch den Magen</h3>
+					</div>
+					<div id="main_bester_animations_kurzfilm_damkeeper" class="main_movie_card">
+						<h3>The Dam Keeper</h3>
+					</div>
+					<div id="main_bester_animations_kurzfilm_biggerpicture" class="main_movie_card">
+						<h3>The Bigger Picture</h3>
+					</div>
+					<div id="main_bester_animations_kurzfilm_meandmoulton" class="main_movie_card">
+						<h3>Me and Moulton</h3>
+					</div>
+					<div id="main_bester_animations_kurzfilm_singlelife" class="main_movie_card">
+						<h3>A Single Life</h3>
+					</div>
+				</div>
+				<!--DEINE WAHL -->
+				<div id="main_wahl">
+					<div class="main_wahl_card">
+						<h1>Bester Film</h1>
+						<div id="main_wahl_bester_film" >Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Beste Regie</h1>
+						<div id="main_wahl_beste_regie">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bester Hauptdarsteller</h1>
+						<div id="main_wahl_bester_hauptdarsteller">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Beste Hauptdarstellerin</h1>
+						<div id="main_wahl_beste_hauptdarstellerin">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bester Nebendarsteller</h1>
+						<div id="main_wahl_bester_nebendarsteller">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">				
+						<h1>Beste Nebendarstellerin</h1>
+						<div id="main_wahl_beste_nebendarstellerin">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bestes Originaldrehbuch</h1>
+						<div id="main_wahl_bestes_original_drehbuch">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bestes adaptiertes Drehbuch</h1>
+						<div id="main_wahl_bestes_adaptiertes_drehbuch">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bester Animationsfilm</h1>
+						<div id="main_wahl_bester_animationsfilm">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bester nicht englischsprachiger Film</h1>
+						<div id="main_wahl_bester_nicht_englischsprachiger_film">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bester Dokumentarfilm</h1>
+						<div id="main_wahl_bester_dokumentarfilm">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Beste Kamera</h1>
+						<div id="main_wahl_beste_kamera">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bester Schnitt</h1>
+						<div id="main_wahl_bester_schnitt">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bestes Produktionsdesign</h1>
+						<div id="main_wahl_bestes_produktionsdesign">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bestes Kostümdesign</h1>
+						<div id="main_wahl_bestes_kostuemdesign">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bestes Make-up und Hairstyling</h1>
+						<div id="main_wahl_bestes_makeup_und_hairstyling">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Beste visuelle Effekte</h1>
+						<div id="main_wahl_beste_visuelle_effekte">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bester Score</h1>
+						<div id="main_wahl_bester_score">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bester Filmsong</h1>
+						<div id="main_wahl_bester_filmsong">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Beste Tonmischung</h1>
+						<div id="main_wahl_beste_tonmischung">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bester Tonschnitt</h1>
+						<div id="main_wahl_bester_tonschnitt">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bester Kurzfilm</h1>
+						<div id="main_wahl_bester_kurzfilm">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bester Dokumentar-Kurzfilm</h1>
+						<div id="main_wahl_bester_dokumentar_kurzfilm">Noch nicht gewählt!</div>
+					</div>
+					<div class="main_wahl_card">
+						<h1>Bester Animations-Kurzfilm</h1>
+						<div id="main_wahl_bester_animations_kurzfilm">Noch nicht gewählt!</div>
+					</div>
+				</div>
+			</div>
+			<div id="info">
+				<!--MOVIE INFO-->
+				<div id="info_boyhood" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/boyhood.jpg">
+						<h2>Boyhood</h2>
+						<p>
+							<b>Nominiert für 9 Oscars</b>
+							<br /><b>Regie: </b>Richard Linklater
+							<br /><b>Drehbuch: </b>Richard Linklater
+							<br /><b>Mit: </b>Ellar Coltrane, Patricia Arquette, Ethan Hawke, ...
+							<br /><b>Genre: </b>Drama
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>8,3/10 from 116.455 users  
+							<br /><b>Metascore: </b>100/100 
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Das Leben des sechsjährigen Mason Jr. (Ellar Coltrane) wird auf den Kopf gestellt, als seine Mutter Olivia (Patricia Arquette) mit ihm und seiner Schwester Samantha (Lorelei Linklater) in ihre Heimat Texas zurückkehrt, um noch einmal das College zu besuchen. Dort bekommen die Kinder immerhin auch ihren Vater Mason Sr. (Ethan Hawke), der seit der Scheidung kaum für sie da gewesen ist, wieder öfter zu Gesicht. Mason Jr. muss sich mit seiner neuen Lebenssituation arrangieren – und durchlebt so die zwölf Jahre, die aus einem kleinen Jungen einen Mann machen: Es stehen Campingausflüge mit dem Vater an, es wird das erste Bier getrunken, der erste Joint geraucht und auch die erste große Liebe erlebt. Doch die Männergeschichten von Olivia sorgen immer wieder für Probleme… 	
+					</p>
+				</div>
+				<div id="info_birdman" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/birdman.jpg">
+						<h2>Birdman</h2>
+						<p>
+							<b>Nominiert für 9 Oscars</b>
+							<br /><b>Regie: </b>Alejandro González Iñárritu
+							<br /><b>Drehbuch: </b>Alejandro González Iñárritu, ...
+							<br /><b>Mit: </b>Michael Keaton, Edward Norton, Emma Stone, ...
+							<br /><b>Genre: </b>Komödie, Drama
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>8,4/10 from 51.628 users  
+							<br /><b>Metascore: </b>88/100 
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Die Karriere von Riggan Thomson (Michael Keaton) ist quasi am Ende. Früher verkörperte er den ikonischen Superhelden Birdman, doch heute gehört er zu den ausgedienten Stars einer vergangenen Ära. In seiner Verzweiflung versucht er, ein Broadway-Stück auf die Beine zu stellen, um sich und allen anderen zu beweisen, dass er noch nicht zum alten Eisen gehört. Als die Premiere näher rückt, fällt Riggans Hauptdarsteller unfallbedingt aus. Der Regisseur findet mit Mike Shiner (Edward Norton) schnellen Ersatz – der jedoch nicht nur ein genialer Schauspieler, sondern auch ein exzentrischer Choleriker ist und Riggans Tochter Sam (Emma Stone) anbaggert, die gerade einen Drogenentzug hinter sich gebracht hat. Zusätzlich unter Druck gesetzt wird der gebeutelte ehemalige "Birdman" von seiner Freundin Laura (Andrea Riseborough), die erzählt, von ihm schwanger zu sein. Ex-Frau Sylvia (Amy Ryan) schneit ebenfalls immer dann herein, wenn die Künstlernerven gerade ohnehin wieder besonders angespannt sind… 
+					</p>
+				</div>
+				<div id="info_imitationgame" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/imitation_game.jpg">
+						<h2>The Imitation Game</h2>
+						<p>
+							<b>Nominiert für 8 Oscars</b>
+							<br /><b>Regie: </b>Morten Tyldum
+							<br /><b>Drehbuch: </b>Graham Moore 
+							<br /><b>Mit: </b>Benedict Cumberbatch, Keira Knightley, Matthew Goode, ...
+							<br /><b>Genre: </b>Biografie, Drama
+							<br /><b>Nationalität: </b>USA, Großbritannien
+							<br /><b>IMDB: </b>8,2/10 from 66.106 users  
+							<br /><b>Metascore: </b>72/100 
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Nach einer unglücklichen Jugend beginnt der brillante Mathematiker Alan Turing (Benedict Cumberbatch) während seines Studiums an der Cambridge-Universität, sein volles Potenzial zu entfalten. Schnell gehört er zu den führenden Denkern des Landes, besonders was seine Theorien zu Rechenmaschinen angeht. Genau diese machen auch den britischen Geheimdienst auf das Genie aufmerksam. Nach einem Test, den Alan mit Leichtigkeit besteht, wird er Mitglied einer geheimen Gruppe. Ihre Aufgabe: im Zweiten Weltkrieg die Kommunikation der Deutschen entschlüsseln. Mit Hilfe von Joan Clarke (Keira Knightley) und Hugh Alexander (Matthew Goode) und unter der Leitung von Stewart Menzies (Mark Strong) sowie Commander Denniston (Charles Dance) versucht Alan, den Verschlüsselungsapparat Enigma zu knacken, um an kriegsentscheidende Informationen zu kommen... 
+					</p>
+				</div>
+				<div id="info_selma" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/selma.jpg">
+						<h2>Selma</h2>
+						<p>
+							<b>Nominiert für 2 Oscars</b>
+							<br /><b>Regie: </b>Ava DuVernay
+							<br /><b>Drehbuch: </b>
+							<br /><b>Mit: </b>David Oyelowo, Tom Wilkinson, Tim Roth, ...
+							<br /><b>Genre: </b>Drama , Historie , Biografie
+							<br /><b>Nationalität: </b>USA, Großbritannien
+							<br /><b>IMDB: </b>7,7/10 from 8.572 users
+							<br /><b>Metascore: </b>89/100 
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Als am 17. Februar 1965 ein Schwarzer von der Polizei niedergeschossen wird und anschließend seinen Verletzungen erliegt, explodiert der Unmut über systematische Diskriminierungen. Bürgerrechtler Martin Luther King Jr. (David Oyelowo) will das nicht hinnehmen und einen Protestmarsch von der Stadt Selma nach Montgomery organisieren. Doch sein Vorhaben wird erschwert: Präsident Lyndon B. Johnson (Tom Wilkinson) ist nur schwer zu überzeugen und wiegelt mit dem Argument ab, dass das Problem der Schwarzen nicht so wichtig sei. Und George Wallace (Tim Roth), Gouverneur von Alabama, geht sogar noch weiter und will alle Bemühungen von King und seinen Anhängern sabotieren. Zu allem Überfluss muss sich King auch noch privaten Problemen stellen, als plötzlich Anschuldigungen laut werden, er wäre seiner Frau (Carmen Ejogo) untreu gewesen... 
+					</p>
+				</div>
+				<div id="info_grandbudapesthotel" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/grand_budapest_hotel.jpg">
+						<h2>The Grand Budapest Hotel</h2>
+						<p>
+							<b>Nominiert für 9 Oscars</b>
+							<br /><b>Regie: </b>Wes Anderson
+							<br /><b>Drehbuch: </b>Wes Anderson
+							<br /><b>Mit: </b>Ralph Fiennes, Tony Revolori, F. Murray Abraham, ...
+							<br /><b>Genre: </b>Komödie, Drama, Krimi
+							<br /><b>Nationalität: </b>Großbritannien, Deutschland
+							<br /><b>IMDB: </b>8,1/10 from 247.512 users   
+							<br /><b>Metascore: </b>88/100 
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Gustave H. (Ralph Fiennes) ist der legendäre Concierge des Grand Budapest Hotels im Alpenstaat Zubrowka. In den 30er Jahren des 20. Jahrhunderts baut er eine enge Freundschaft zu dem jungen Hotelangestellten Zéro Moustafa (Tony Revolori) auf, der sein engster Vertrauter und Protégé wird. Als Gustaves Geliebte, die reiche 84-jährige Madame D. (Tilda Swinton), eines Tages stirbt und ihm ein wertvolles Renaissance-Gemälde hinterlässt, wird dem Concierge Mord unterstellt. Er weiß sich schließlich nicht mehr anders zu helfen und flieht mitsamt dem Bild. Nun verfolgen ihn nicht nur die Männer von Polizist Henckels (Edward Norton), sondern auch die Verwandten der Toten, allen voran der hinterlistige Dmitri (Adrien Brody) mit seinem finsteren Handlanger Jopling (Willem Dafoe), denen jedes Mittel recht ist, um ihr Ziel zu erreichen...
+					</p>
+				</div>
+				<div id="info_entdeckungderunendlichkeit" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/entdeckung_der_unendlichkeit.jpg">
+						<h2>Die Entdeckung der Unendlichkeit</h2>
+						<p>
+							<b>Nominiert für 5 Oscars</b>
+							<br /><b>Regie: </b>James Marsh
+							<br /><b>Drehbuch: </b>Anthony McCarten 
+							<br /><b>Mit: </b>Eddie Redmayne, Felicity Jones, Tom Prior, ...
+							<br /><b>Genre: </b>Biografie, Drama
+							<br /><b>Nationalität: </b>Großbritannien
+							<br /><b>IMDB: </b>7,8/10 from 33.197 users 
+							<br /><b>Metascore: </b>72/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Während seines Studiums an der renommierten Cambridge University in den 1960er Jahren verliebt sich der brillante Naturwissenschaftler Stephen Hawking (Eddie Redmayne) bis über beide Ohren in die Sprachenstudentin Jane Wilde (Felicity Jones). Einen herben Rückschlag erhält der theoretische Physiker, der sich vor allem mit dem Phänomen der Zeit und dem Ursprung des Universums beschäftigt, im Alter von nur 21 Jahren, als bei ihm die degenerative Nervenkrankheit ALS diagnostiziert wird. Die Ärzte geben ihm nur noch etwa zwei Jahre zu leben. Doch schiere Willenskraft und nicht zuletzt die Liebe Janes, die ihn nach dem niederschmetternden Befund nicht etwa verlässt, sondern seine Frau wird, helfen ihm, den immer größeren körperlichen Einschränkungen zu trotzen und schließlich mit seinen bahnbrechenden Forschungen in die Geschichte einzugehen.
+					</p>
+				</div>
+				<div id="info_whiplash" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/whiplash.jpg">
+						<h2>Whiplash</h2>
+						<p>
+							<b>Nominiert für 5 Oscars</b>
+							<br /><b>Regie: </b>Damien Chazelle
+							<br /><b>Drehbuch: </b>Damien Chazelle 
+							<br /><b>Mit: </b>Miles Teller, J.K. Simmons, Paul Reiser, ...
+							<br /><b>Genre: </b>Drama, Musik
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>8,7/10 from 44.744 users  
+							<br /><b>Metascore: </b>88/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Andrew (Miles Teller) ist ein begnadeter Schlagzeugspieler. In einer der renommiertesten Musikschulen des Landes wird er von Terence Fletcher (J.K. Simmons) entdeckt. Der bekannte Jazz-Band-Lehrer nimmt den jungen Andrew fortan unter seine Fittiche. Doch seine ohnehin schon rabiaten Unterrichtsmethoden arten immer mehr in Gewaltexzesse aus. Um Andrew zu Höchstleistungen zu pushen, schikaniert er ihn und treibt ihn bis an seine physischen und emotionalen Grenzen. Dennoch stellt sich Andrew dieser Tortur, ist es doch sein sehnlichster Wunsch, einer der größten Schlagzeuger der Welt zu werden. Während sein besorgter Vater (Paul Reiser) immer mehr an den Absichten des Lehrers zweifelt, hält Andrew daher hartnäckig am Unterricht fest. Doch wieviel mehr kann der Teenager noch ertragen? 
+					</p>
+				</div>
+				<div id="info_americansniper" class="info_movie">
+					<div class="info_stats">	
+						<img class="info_poster" align="left" src="img/movies/american_sniper.jpg">
+						<h2>American Sniper</h2>
+						<p>
+							<b>Nominiert für 6 Oscars</b>
+							<br /><b>Regie: </b>Clint Eastwood
+							<br /><b>Drehbuch: </b>Jason Dean Hall 
+							<br /><b>Mit: </b>Bradley Cooper, Sienna Miller, Kyle Gallner, ...
+							<br /><b>Genre: </b>Biografie, Kriegsfilm
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>7,7/10 from 42.159 users 
+							<br /><b>Metascore: </b>72/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						US-Navy-SEAL und Scharfschütze Chris Kyle (Bradley Cooper) wird mit nur einem Auftrag in den Irak geschickt: Er soll seine Kameraden beschützen. Seine punktgenauen Schüsse retten unzählige Leben auf dem Schlachtfeld. Als sich die Geschichten seiner Heldentaten und der unvergleichlichen Treffsicherheit verbreiten, bekommt er den Spitznamen „Legend“. Doch seine Reputation bleibt auch hinter den feindlichen Linien nicht verborgen, die Gegner setzen ein Kopfgeld auf ihn aus. Und der Krieg ist nicht Kyles einziger Kampf: Der Scharfschütze versucht, ein guter Ehemann und Vater für seine Liebsten am anderen Ende der Welt zu sein. Trotz der lauernden Gefahr und seiner daheim wartenden Familie absolviert Kyle vier Einsätze im Irak – ganz nach dem Motto „lass niemanden zurück“. Aber als er dann wieder bei seiner Frau Taya (Sienna Miller) und seinen Kindern ist, erkennt er, dass er den Krieg nicht abschütteln kann.
+					</p>
+				</div>
+				<div id="info_foxcatcher" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/foxcatcher.jpg">
+						<h2>Foxcatcher</h2>
+						<p>
+							<b>Nominiert für 5 Oscars</b>
+							<br /><b>Regie: </b>Bennett Miller
+							<br /><b>Drehbuch: </b>E. Max Frye, Dan Futterman  	
+							<br /><b>Mit: </b>Channing Tatum, Steve Carell, Mark Ruffalo, ...
+							<br /><b>Genre: </b>Drama, Biografie
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>7,4/10 from 23.469 users  
+							<br /><b>Metascore: </b>81/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Der Ringer Mark Schultz (Channing Tatum), der 1984 die olympische Goldmedaille gewonnen hat, ist gefangen in einem Kreislauf aus täglicher Trainingsroutine und gelegentlichen Ansprachen, die er hält. Er hat den Höhepunkt seiner Karriere hinter sich, als er den sportbegeisterten Multimillionär John du Pont (Steve Carell) trifft. Dieser lädt den Sportler ein, an den Vorbereitungen des Trainings für die Olympischen Spiele 1988 teilzunehmen, die in Seoul stattfinden. Schultz nimmt das Angebot an und zieht auf du Ponts Farm, wo das Team Foxcatcher trainiert. Dort wird er vom exzentrischen du Pont gleichermaßen in Luxus gehüllt wie zu unaufhörlichem Training getrieben. Nach mehreren vergeblichen Versuchen gelingt es Schultz schließlich, auch seinen Bruder und Mentor Dave (Mark Ruffalo) zu überreden, dem Team beizutreten. Als jedoch der Druck auf alle Beteiligten in Seoul immer weiter zunimmt, drohen sich die aufgebauten Spannungen in einer Katastrophe zu entladen... 
+					</p>
+				</div>
+				<div id="info_stillalice" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/still_alice.jpg">
+						<h2>Still Alice</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Richard Glatzer, Wash Westmoreland
+							<br /><b>Drehbuch: </b>Richard Glatzer, Wash Westmoreland
+							<br /><b>Mit: </b>Julianne Moore, Alec Baldwin, Kristen Stewart, ...
+							<br /><b>Genre: </b>Drama
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>7,5/10 from 7.055 users  
+							<br /><b>Metascore: </b>72/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Zunächst versucht die anerkannte Sprachwissenschaftlerin Dr. Alice Howland (Julianne Moore) noch, ihre Krankheit zu verheimlichen. Gelegentliche Orientierungslosigkeit in den Straßen von Manhattan und Schwierigkeiten, einzelne Wörter zu finden, machen das Leben zwar zunehmend schwerer, doch erst als sie anfängt, auch Menschen zu verwechseln, spricht sie mit ihrer Familie über ihren Zustand. Ihr liebender Ehemann John (Alec Baldwin) ist genauso schockiert wie es ihre drei erwachsenen Kinder Anna (Kate Bosworth), Tom (Hunter Parrish) und Lydia (Kristen Stewart) sind, als sie erfahren, dass Alice an einer seltenen Form von Alzheimer leidet, die auch vererbbar ist. Mit der Diagnose wird das bislang so harmonische Familien- und Alltagsleben, an dem Alice mit allen Mitteln festhalten will, auf eine äußerst harte Probe gestellt… 
+					</p>
+				</div>
+				<div id="info_grossetrip" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/grosse_trip.jpg">
+						<h2>Der Große Trip - Wild</h2>
+						<p>
+							<b>Nominiert für 2 Oscars</b>
+							<br /><b>Regie: </b>Jean-Marc Vallée
+							<br /><b>Drehbuch: </b>Nick Hornby
+							<br /><b>Mit: </b>Reese Witherspoon, Laura Dern, Gaby Hoffmann, ...
+							<br /><b>Genre: </b>Drama, Biografie
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>7,4/10 from 9.091 users   
+							<br /><b>Metascore: </b>76/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Cheryl Strayed (Reese Witherspoon) musste viele Schicksalsschläge erleiden. Der Verlust ihrer geliebten Mutter (Laura Dern) und das Ende ihrer Ehe, die an Cheryls Heroinsucht zerbrach, haben sie in ein tiefes Loch fallen lassen. Frustriert, aber auch entschlossen kehrt sie ihrem alten Leben den Rücken zu und begibt sich – ohne geringste Vorkenntnisse und mit viel zu schwerem Rucksack – auf eine 2.000-Kilometer-Wanderung entlang des Pacific Crest Trails. Auf ihrem Weg bekommt Cheryl es mit der geballten Erbarmungslosigkeit der Natur zu tun, doch sie tritt Durst, Hunger, Hitze und Kälte mit immer neuem Mut entgegen. Einmal dem Ruf der Wildnis gefolgt, übersteht sie bald auch Begegnungen mit gefährlichen Raubtieren. Durch all die neuen Erlebnisse relativieren sich die bisherigen Erfahrungen, Erfolge, Rückschläge, Hoffnungen und Ängste der Aussteigerin… 
+					</p>
+				</div>
+				<div id="info_zweitageeinenacht" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/zwei_tage_eine_nacht.jpg">
+						<h2>Zwei Tage, Eine Nacht</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b> Jean-Pierre Dardenne, Luc Dardenne
+							<br /><b>Drehbuch: </b> Jean-Pierre Dardenne, Luc Dardenne
+							<br /><b>Mit: </b>Marion Cotillard, Fabrizio Rongione, Catherine Salée 
+							<br /><b>Genre: </b>Drama 
+							<br /><b>Nationalität: </b>Frankreich , Belgien , Italien
+							<br /><b>IMDB: </b>7,5/10 from 10.844 users  
+							<br /><b>Metascore: </b>92/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Für Sandra (Marion Cotillard) steht ihr Job in einer kleinen Firma auf dem Spiel: Es gab eine Abstimmung, bei der sich die Mitarbeiter entscheiden mussten, ob sie für den Erhalt von Sandras Job auf ihre jährliche Bonuszahlung verzichten oder nicht.  Das erste Votum fiel zu Ungunsten der Familienmutter aus, aber die Geschäftsführung erklärt sich bereit, die Abstimmung wiederholen zu lassen. Nun bleibt ihr ein Wochenende Zeit, ihre Kollegen davon zu überzeugen, auf die Prämie von 1000 Euro zu verzichten: Sandra sucht das Gespräch mit jedem einzelnen von ihnen. Die meisten stecken allerdings selbst in einem Dilemma, sind sie doch auf die Zahlung angewiesen, um ihre Mieten zu zahlen und die Kinder zur Schule zu schicken. Wird die junge Frau es mit der Unterstützung ihres Ehemanns Manu (Fabrizio Rongione) noch schaffen, einen Umschwung herbeizuführen und damit ihre Existenz zu sichern? 
+					</p>
+				</div>
+				<div id="info_gonegirl" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/gone_girl.jpg">
+						<h2>Gone Girl</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>David Fincher
+							<br /><b>Drehbuch: </b> Gillian Flynn
+							<br /><b>Mit: </b>Ben Affleck, Rosamund Pike, Neil Patrick Harris
+							<br /><b>Genre: </b>Thriller
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>8,3/10 from 267.614 users  
+							<br /><b>Metascore: </b>79/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Ein warmer Sommermorgen in Missouri: Nick (Ben Affleck) und Amy Dunne (Rosamund Pike) wollten heute eigentlich ihren fünften Hochzeitstag feiern, doch die Frau ist plötzlich verschwunden. Als sie nicht wieder auftaucht, gerät Nick ins Visier der ermittelnden Polizisten Rhonda Boney (Kim Dickens) und Jim Gilpin (Patrick Fugit). Der ehemalige Journalist, der inzwischen nur noch ein bisschen unterrichtet und dazu mit seiner Schwester Margo (Carrie Coon) eine Bar betreibt, besteht zwar auf seine Unschuld, verstrickt sich aber immer mehr in ein Netz aus Lügen und Verrat. Nach und nach tauchen Indizien auf, die darauf hindeuten, dass Amy Angst vor ihrem Mann hatte. Doch auch die Weste der Verschwundenen ist nicht so rein wie angenommen. Durch den Fund ihres Tagebuchs kommen dunkle Dinge ans Licht, die niemand jemals von der vermeintlich perfekten Frau erwartet hätte. Ob Amy überhaupt noch am Leben ist, bleibt weiterhin unklar… 
+					</p>
+				</div>
+				<div id="info_richter" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/richter.jpg">
+						<h2>Der Richter</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>David Dobkin
+							<br /><b>Drehbuch: </b> Nick Schenk, Bill Dubuque 
+							<br /><b>Mit: </b>Robert Downey Jr., Robert Duvall, Vera Farmiga
+							<br /><b>Genre: </b>Drama
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>7,5/10 from 48.766 users  
+							<br /><b>Metascore: </b>48/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Der smarte Hank Palmer (Robert Downey Jr.) hat seinem kleinen Geburtsort schon vor Jahren den Rücken gekehrt und arbeitet seither als erfolgreicher Anwalt in der Großstadt. Nicht nur räumlich hat er sich weiterbewegt, auch zu seiner Familie hat Hank den Kontakt längst abgebrochen. Als er vom Tod seiner Mutter erfährt, kehrt er das erste Mal nach langer Zeit nach Hause zurück, wenn auch nur sehr widerwillig. Nach seiner Ankunft wird der Großstädter auch gleich mit weiteren familiären Problemen konfrontiert: Sein Vater Joseph (Robert Duvall), der vor seinem Ruhestand als Richter des Städtchens fungierte, leidet an Erinnerungslücken und wird des Mordes angeklagt. Um diesen Anschuldigungen zu begegnen, übernimmt Hank die Verteidigung seines Vaters vor Gericht. Bei seinen persönlichen Ermittlungen findet er mehr über die Familie heraus als ihm lieb ist... 
+					</p>
+				</div>
+				<div id="info_intothewoods" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/into_the_woods.jpg">
+						<h2>Into The Woods</h2>
+						<p>
+							<b>Nominiert für 3 Oscars</b>
+							<br /><b>Regie: </b>Rob Marshall
+							<br /><b>Drehbuch: </b>James Lapine
+							<br /><b>Mit: </b>Anna Kendrick, Meryl Streep, Chris Pine
+							<br /><b>Genre: </b>Familie , Fantasy , Musical
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>6,6/10 from 28.515 users  
+							<br /><b>Metascore: </b>69/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Der Bäcker (James Corden) und seine Frau (Emily Blunt) wünschen sich nichts sehnlicher als ein Kind. Allerdings verhindert ein Fluch der bösen Hexe (Meryl Streep), dass die Frau schwanger werden kann. Die finstere Magierin bietet dem Paar eines Tages jedoch an, den Bann aufzuheben, wenn es ihr bestimmte Gegenstände von einigen märchenhaften Gestalten beschafft. Um ihren Traum vom Familienglück endlich zu verwirklichen, lassen sich die beiden Verzweifelten auf das turbulente Abenteuer ein, in dessen Verlauf sie unter anderem die Wege von Rotkäppchen (Lilla Crawford) und dem listigen Wolf (Johnny Depp), Rapunzel (Mackenzie Mauzy), Cinderella (Anna Kendrick) und ihrem Prinzen (Chris Pine) sowie dem mit magischen Bohnen ausgestatten Jack (Daniel Huttlestone) kreuzen. Doch was kann Schreckliches passieren, wenn die Hexe schließlich alles bekommt, wonach sie verlangt? 
+					</p>
+				</div>
+				<div id="info_nightcrawler" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/nightcrawler.jpg">
+						<h2>Nightcrawler</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Dan Gilroy
+							<br /><b>Drehbuch: </b>Dan Gilroy
+							<br /><b>Mit: </b>Jake Gyllenhaal, Rene Russo, Bill Paxton
+							<br /><b>Genre: </b>Thriller , Drama
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>8,1/10 from 71.378 users  
+							<br /><b>Metascore: </b>76/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Lou Bloom (Jake Gyllenhaal) hat seine ganz eigene Vorstellung vom American Dream – er ist überzeugt, dass die guten Dinge nur zu denen kommen, die sich ehrgeizig den Arsch abrackern. Seinem Motto nach kann man nur die Lotterie gewinnen, wenn man Geld für einen Lottoschein hat. Doch bei Lou will es mit dem Traumjob nicht so richtig klappen, weswegen er sich als Gauner mit kleinen Diebstählen über Wasser hält. Nach einer intensiven erfolglosen Jobsuche ist er so verzweifelt, dass er, bewaffnet mit einer Kamera, als freier Mitarbeiter Bilder von Unfällen, Verbrechen, Mord an einen lokalen TV-Sender verkauft. Nachdem seine Beiträge als Kameramann bei der Chefredakteurin Nina (Rene Russo) gut ankommen, stürzt er sich immer weiter in die Unterwelt von L.A. auf der Suche nach sensationellem und schonungslosem Bildmaterial, bei dem niemand wegsehen kann. Chaos und menschliches Leid werden in dem halsabschneiderischen Blut-und-Tränen-Business des "Nightcrawling" in bare Münze umgerechnet. Angetrieben von einem verzweifelten Drang nach Anerkennung und Erfolg steigt Lou mit immer zwielichtigeren Methoden weiter in den Abgrund – und droht bald selbst als pikante Schlagzeile zu enden… 
+					</p>
+				</div>
+				<div id="info_inherentvice" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/inherent_vice.jpg">
+						<h2>Inherent Vice</h2>
+						<p>
+							<b>Nominiert für 2 Oscars</b>
+							<br /><b>Regie: </b>Paul Thomas Anderson
+							<br /><b>Drehbuch: </b>Paul Thomas Anderson
+							<br /><b>Mit: </b>Joaquin Phoenix, Josh Brolin, Owen Wilson, ...
+							<br /><b>Genre: </b>Komödie , Krimi , Drama
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>7,3/10 from 8.996 users  
+							<br /><b>Metascore: </b>81/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Los Angeles 1970: Der Privatdetektiv und Drogenliebhaber Larry "Doc" Sportello (Joaquin Phoenix) staunt nicht schlecht, als seine Ex-Freundin Shasta (Katherine Waterston) eines Abends urplötzlich bei ihm auf der Matte steht. Sie erzählt ihm von ihrer Affäre mit dem Milliardär Mickey Wolfman (Eric Roberts) sowie dem Plan von dessen Frau Sloane (Serena Scott Thomas) und deren Liebhaber, den reichen Bauherrn zu entführen und in eine psychiatrische Anstalt zu stecken. Doc soll der verliebten Shasta nun helfen, dieses Vorhaben zu verhindern. Doch kaum hat der Ermittler mit seinen ersten Nachforschungen begonnen, verschwindet Mickey auch schon. Während Doc seine Bemühungen zur Aufklärung des Falls verstärkt, bekommt er es mit seinem verfeindeten Ex-Kollegen Christian "Bigfoot" Bjornsen (Josh Brolin) und mehr und mehr anderen zwielichtigen Gestalten zu tun. Dabei verstrickt sich Doc immer tiefer in Ärger, aus dem ein unbeschadetes Entkommen zunehmend unwahrscheinlicher wird…
+					</p>
+				</div>
+				<div id="info_drachenzaehmenleichtgemacht2" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/drachenzaehmen_leicht_gemacht_2.jpg">
+						<h2>Drachenzähmen leicht gemacht 2</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Dean DeBlois
+							<br /><b>Drehbuch: </b>Dean DeBlois
+							<br /><b>Mit: </b>Jay Baruchel, Cate Blanchett, Gerard Butler, ...
+							<br /><b>Genre: </b>Animation , Abenteuer , Familie
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>8,0/10 from 136.478 users  
+							<br /><b>Metascore: </b>76/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Die Wikinger auf der Insel Berk haben sich mit den wilden Drachen, die einst die Dörfer unsicher machten, angefreundet. Astrid (Stimme: America Ferrera), Rotzbakke (Jonah Hill) und der Rest der Clique verbringen ihre Freizeit mit dem neuen Lieblingssport der Inselbewohner: dem Drachenrennen. Nur der junge Wikinger Hicks (Jay Baruchel), der von seinem Vater in die Rolle des neuen Häuptlings gedrängt wird, geht lieber auf Erkundungsflügen die weite Welt erforschen – natürlich auf dem Rücken von Drache Ohnezahn. Bei einer dieser Reisen trifft der Häuptlingssohn nicht nur seine totgeglaubte Mutter, sondern entdeckt auch eine geheime Eishöhle. In der sind hunderte, bislang unbekannte wilde Drachenarten zuhause – und der mysteriöse Drachenreiter. Bald geraten Hicks und Ohnezahn in einen Kampf um den Frieden auf Berk, den sie nur gemeinsam mit ihren Freunden gewinnen können…
+					</p>
+				</div>
+				<div id="info_songofthesea" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/song_of_the_sea.jpg">
+						<h2>Song Of The Sea</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Tomm Moore
+							<br /><b>Drehbuch: </b>Will Collins, Tomm Moore
+							<br /><b>Mit: </b>Brendan Gleeson, Fionnula Flanagan, Pat Shortt, ...
+							<br /><b>Genre: </b>Animation , Familie , Fantasy
+							<br /><b>Nationalität: </b>Irland , Dänemark , Belgien , Luxemburg , Frankreich
+							<br /><b>IMDB: </b>8,2/10 from 312 users 
+							<br /><b>Metascore: </b>84/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Ben (Stimme im Original: David Rawle) und seine sechsjährige Schwester Saoirse leben gemeinsam mit ihrem Vater Conor (Brendan Gleeson) in einem alten Leuchtturm am Meer. Den Tod ihrer Mutter kann Conor jedoch auch Jahre danach noch nicht verkraften. Und so werden seine beiden Kinder eines Tages wenig begeistert in die Stadt geschickt, wo sie fortan bei ihrer Großmutter (Fionnula Flanagan) leben sollen. Doch vor allem Saoirse zieht es schnell zurück ans Wasser, ist sie doch eine so genannte Selkie, eine sagenumwobene Fee, die an Land eine menschliche Gestalt hat, sich im Wasser aber in eine Robbe verwandelt. Als ihr dann auch noch andere Feen begegnen und zu verstehen geben, dass ihr eine wichtige Aufgabe bevorsteht, fassen Saoirse und ihr Bruder endgültig den Beschluss, ans Meer zurückzukehren. In einer sich langsam entzaubernden Welt, in der mythische Geschöpfe fast in Vergessenheit geraten sind, muss das kleine Mädchen das Lied seiner Vorfahren singen, um die in der modernen Welt gefangenen Wesen zu befreien. Eine schwierige Mission für ein Kind, das obendrein noch nie gesprochen hat. 
+					</p>
+				</div>
+				<div id="info_baymax" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/baymax.jpg">
+						<h2>Baymax - Riesiges Robowabohu</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Don Hall, Chris Williams
+							<br /><b>Drehbuch: </b>Jordan Roberts, Daniel Gerson, ...
+							<br /><b>Mit: </b>Ryan Potter, Scott Adsit, Jamie Chung, ...
+							<br /><b>Genre: </b>Abenteuer , Animation , Familie
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>8,1/10 from 53.946 users  
+							<br /><b>Metascore: </b>74/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Hiro Hamada (Stimme: Ryan Potter) ist ein brillanter Teenager und lebt in der futuristischen Stadt San Fransokyo, wo er sein geniales Erfindertalent aber bei weitem nicht so nutzt, wie es sein Bruder Tadashi (Daniel Henney) gerne hätte. Als dieser stirbt, findet Hiro den aufblasbaren Roboter Baymax (Scott Adsit), der von Tadashi entwickelt wurde, um Menschen mit Schmerzen zu helfen. Baymax' tatkräftige Unterstützung kann der aufgeweckte Junge gut gebrauchen, droht doch schon bald ein mysteriöser Mann mit einer Kabuki-Maske damit, seine Heimatstadt zu zerstören. Mit der Hilfe von Baymax und Tadashis Freunden Go Go Tomago (Jamie Chung), Wasabi (Damon Wayans Jr.), Honey Lemon (Genesis Rodriguez) und Fred (T.J. Miller) beschließt Hiro, alles zu tun, um die Katastrophe zu verhindern. Dazu stattet er seine Mitstreiter mit allerlei nützlichen High-Tech-Gerätschaften aus. Gemeinsam sind sie von nun an die "Big Hero 6"... 
+					</p>
+				</div>
+				<div id="info_boxtrolls" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/boxtrolls.jpg">
+						<h2>Die Boxtrolls</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Graham Annable, Anthony Stacchi
+							<br /><b>Drehbuch: </b>Irena Brignull, Adam Pava, ...
+							<br /><b>Mit: </b>Ben Kingsley, Jared Harris, Nick Frost, ...
+							<br /><b>Genre: </b>Abenteuer , Familie , Animation , Fantasy
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>6,9/10 from 16.706 users  
+							<br /><b>Metascore: </b>61/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Die unter den Straßen der Stadt Cheesebridge hausenden Boxtrolls werden von den menschlichen Bewohnern der Oberfläche gefürchtet. Da die in Pappkartons lebenden Monster nur nachts ihre unterirdische Heimat verlassen, um in den Abfällen der Menschen nach allerlei Interessantem zu suchen, ranken sich viele Schauergeschichten um die Boxtrolls, die von dem verschlagenen Archibald Snatcher (Originalstimme: Ben Kingsley) befeuert werden. Der möchte die kleinen Trolle ausrotten, um sich als Retter feiern lassen zu können und sich in der Oberschicht der Gesellschaft zu etablieren. In Wirklichkeit handelt es sich bei den scheuen Kreaturen allerdings um zwar nicht sehr reinliche, dafür aber umso liebenswürdigere Gesellen, die vor Jahren sogar den Waisenjungen Eggs (Isaac Hempstead-Wright) bei sich aufgenommen haben. Als der die Bürgermeistertochter Winnifred (Elle Fanning) kennenlernt, wollen die Kinder die Erwachsenen von Cheesebridge darüber informieren, was Snatcher im Schilde führt, aber der setzt alle Hebel in Bewegung, um das zu verhindern... 
+					</p>
+				</div>
+				<div id="info_legendederprinzessinkaguya" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/legende_der_prinzessin_kaguya.jpg">
+						<h2>Die Legende der Prinzessin Kaguya</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Isao Takahata
+							<br /><b>Drehbuch: </b>Isao Takahata
+							<br /><b>Mit: </b> 	Tatsuya Nakadai, Shichinosuke Nakamura, Nobuko Miyamoto, ...
+							<br /><b>Genre: </b>Animation , Familie , Drama
+							<br /><b>Nationalität: </b>Japan
+							<br /><b>IMDB: </b>8,2/10 from 3.958 users 
+							<br /><b>Metascore: </b>89/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Ein alter Bambussammler findet eines Tages eine fingergroße Prinzessin, die im Bambus lebt. Stolz nimmt er sie mit nach Hause und zeigt sie seiner Frau. Als diese das kleine Wesen berührt, verwandelt es sich in ein Baby. Das Paar, das keine eigenen Kinder hat, nimmt das Baby bei sich auf und umhegt es liebevoll. Bald findet der Bambussammler im Wald auch Gold und Edelstoffe und glaubt zu erkennen, dass die Götter eine große Zukunft für die Bambusprinzessin wünschen. So fängt er an, die wertvollen Funde für ein großes Anwesen und sogar Etikette-Unterricht für die Prinzessin auszugeben. Deren unbeschwertes Leben im Haus des Paares muss sie nun eintauschen gegen ein Dasein voller strenger Vorschriften. Bald wächst sie zu einer schönen Frau heran, der zahlreiche Männer aus reichen Verhältnissen Anträge machen. Doch der Prinzessin ist so gar nicht nach Heiraten...
+					</p>
+				</div>
+				<div id="info_wildtales" class="info_movie">
+				<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/wild_tales.jpg">
+						<h2>Wild Tales</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Damián Szifrón
+							<br /><b>Drehbuch: </b>Damián Szifrón
+							<br /><b>Mit: </b>Ricardo Darín, Oscar Martinez, Leonardo Sbaraglia, ...
+							<br /><b>Genre: </b>Thriller , Komödie , Drama
+							<br /><b>Nationalität: </b>Argentinien , Spanien
+							<br /><b>IMDB: </b>8,3/10 from 9.714 users  
+							<br /><b>Metascore: </b>75/100 
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						"Wild Tales" ist ein Episodenfilm, bestehend aus sechs Geschichten, die zwar inhaltlich nicht zusammenhängen, thematisch aber trotzdem verknüpft sind. In "Pasternak" entdecken die Reisenden in einem Flugzeug, dass alle denselben gescheiterten Musiker kennen. In der zweiten Episode "Die Ratten" muss sich eine Kellnerin (Julieta Zylberberg) mit einem Mann aus ihrer Vergangenheit (Cesar Bordon) auseinandersetzen, der ihre Eltern in den Ruin trieb. In "Straße zur Hölle" sorgt ein aggressiver, mitten im Nirgendwo ausgetragener Zweikampf für Blutvergießen. In "Bombita" setzt sich der gleichnamige Held (Ricardo Darin) mit unorthodoxen Mitteln gegen Abschleppwagen und Strafzettel zur Wehr. In der vorletzten Episode "Die Rechnung" geht es um die schmutzigen Einzelheiten einer Fahrerflucht. Und in "Bis dass der Tod uns scheidet" findet eine frischgebackene Braut (Érica Rivas) heraus, dass ihr Angetrauter (Diego Gentile) sie betrogen hat. Ihre Entrüstung darüber bringt so manchen Hochzeitsgast ins Krankenhaus…
+					</p>
+				</div>
+				<div id="info_ida" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/ida.jpg">
+						<h2>Ida</h2>
+						<p>
+							<b>Nominiert für 2 Oscars</b>
+							<br /><b>Regie: </b>Pawel Pawlikowski
+							<br /><b>Drehbuch: </b>Pawel Pawlikowski, Rebecca Lenkiewicz
+							<br /><b>Mit: </b>Agata Kulesza, Agata Trzebuchowska, Halina Skoczynska, ...
+							<br /><b>Genre: </b>Drama
+							<br /><b>Nationalität: </b>Polen , Dänemark
+							<br /><b>IMDB: </b>7,5/10 from 12.605 users  
+							<br /><b>Metascore: </b>90/100 
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Polen im Jahr 1962: Anna (Agata Trzebuchowska) ist eine Novizin, die in einem Kloster von Nonnen erzogen wurde. Bevor sie ihr Gelübde ablegen kann, gibt ihr die Oberschwester des Klosters einen folgenreichen Auftrag: die junge Frau soll ihre Tante Wanda (Agata Kulesza) besuchen, Annas einzige noch lebende Verwandte. Wanda, die Schwester ihrer Mutter, ist eine leidenschaftliche Sensualistin mittleren Alters und offenbart ihrer Nichte ein lange gehütetes Geheimnis: Eigentlich ist Anna Jüdin und ihr wahrer Name lautet Ida. Von der Nachricht ins Wanken gebracht, begibt sich die Novizin gemeinsam mit ihrer Tante auf eine Reise, auf der sie sich mit der tragischen Geschichte ihrer Familie auseinandersetzen muss – aber auch beginnt, ihr eigenes Leben, ihre Ideale und ihren Glauben zu hinterfragen. Wird Anna als Ida zurückkehren?
+					</p>
+				</div>
+				<div id="info_leviathan" class="info_movie">	
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/leviathan.jpg">
+						<h2>Leviathan</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Andrey Zviaguintsev
+							<br /><b>Drehbuch: </b>Oleg Negin, Andrey Zvyagintsev
+							<br /><b>Mit: </b>Alexeï Serebriakov, Elena Lyadova, Vladimir Vdovitchenkov, ...
+							<br /><b>Genre: </b>Drama
+							<br /><b>Nationalität: </b>Russland
+							<br /><b>IMDB: </b>8,0/10 from 5.114 users  
+							<br /><b>Metascore: </b>91/100 
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Der korrupte Bürgermeister einer kleinen Küstenstadt (Roman Madyanov) hat es auf das Land, das Anwesen und die kleine Autowerkstatt von Kolia (Alexeï Serebriakov) und seiner Familie abgesehen. Kolia lebt dort mit seiner Ehefrau Lilya (Elena Lyadova) und seinem jugendlichen Sohn Roma (Sergey Pokhadaev). Um gegen den raffgierigen Politiker und seine Pläne vorzugehen, bittet Kolia seinen alten Freund Dmitri (Vladimir Vdovichenkov) um Hilfe. Dmitri hat es nach Beendigung des Wehrdienstes bis zum angesehenen Anwalt in Moskau gebracht. Vor Gericht wollen sie gegen den Bürgermeister vorgehen und den Verkauf weit unter Wert verhindern. Sollte das nicht gelingen, besteht Plan B darin, möglichst viel kompromittierendes Material gegen den zwielichtigen Politiker zu sammeln. Doch als Kolia seinen besten Freund und seine Frau zusammen im Bett erwischt und sich die Schläger des Bürgermeisters melden, kommt alles ganz anders. 
+					</p>
+				</div>
+				<div id="info_tangerines" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/tangerines.jpg">
+						<h2>Tangerines</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Zaza Urushadze
+							<br /><b>Drehbuch: </b>Zaza Urushadze
+							<br /><b>Mit: </b>Misha Meskhi, Giorgi Nakashidze, Elmo Nüganen, ...
+							<br /><b>Genre: </b>Drama , Kriegsfilm
+							<br /><b>Nationalität: </b>Estland , Georgien
+							<br /><b>IMDB: </b>8,6/10 from 4.584 users   
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Krieg in Abkhazia im Jahre 1990. Ivo bleibt zurück, um seine Feldfrüchte für die Ernte vorzubereiten. Als ein blutiger Konflikt vor seiner Tür losgetreten wird, sieht er sich dazu gezwungen, einen zurückgelassenen verwundeten Mann bei sich aufzunehmen.
+					</p>
+				</div>
+				<div id="info_timbuktu" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/timbuktu.jpg">
+						<h2>Timbuktu</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Abderrahmane Sissako
+							<br /><b>Drehbuch: </b>Abderrahmane Sissako, Kessen Tall 
+							<br /><b>Mit: </b>Ibrahim Ahmed, Abel Jafri, Toulou Kiki, ...
+							<br /><b>Genre: </b>Drama
+							<br /><b>Nationalität: </b>Frankreich , Mauretanien
+							<br /><b>IMDB: </b>7,3/10 from 820 users  
+							<br /><b>Metascore: </b>85/100 
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Timbuktu, Mali: Islamistische Fundamentalisten haben die Oasenstadt übernommen und die religiösen Gesetze der Sharia eingeführt. Das Leben unterliegt einem strengen Reglement. Die Menschen dürfen nicht mehr rauchen, nicht mehr musizieren und nicht mehr Fußball spielen; die Frauen werden gezwungen, sich zu verschleiern und auf dem Markt Handschuhe zu tragen. In einem Zelt, nicht weit von der Niederlassung der mit grausamer Brutalität über die Stadt herrschenden Islamisten, wohnt der Beduine Kidane (Ibrahim Ahmed) zusammen mit seiner Frau Satima (Toulou Kiki), seiner Tochter Toya und einem 12-jährigen Hirtenjungen. Zunächst lebt die Familie in Ruhe, hält Distanz zu den Extremisten. Doch dann begeht Kidane einen Fehler und tötet nach einem Streit den Fischer Amadou, weil der seine liebste Kuh schlachtete. Von nun an bricht der islamistische Terror auch über den Alltag der friedliebenden Familie herein...
+					</p>
+				</div>
+				<div id="info_citizenfour" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/citizenfour.jpg">
+						<h2>Citizenfour</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Laura Poitras
+							<br /><b>Drehbuch: </b>
+							<br /><b>Mit: </b>Edward Snowden, Jacob Appelbaum, William Binney, ...
+							<br /><b>Genre: </b>Dokumentation
+							<br /><b>Nationalität: </b>USA , Deutschland
+							<br /><b>IMDB: </b>8,3/10 from 1.762 users  
+							<br /><b>Metascore: </b>88/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Die Filmemacherin Laura Poitras beschäftigte sich 2013 gerade mit einem weiteren Film über die Auswirkungen der Anschläge am 11. September 2001 und dem daraus entstehenden Krieg gegen den Terror. Da erhielt sie E-Mails von jemandem, der unter dem Synonym "citizenfour" schrieb und behauptete, Informationen über die Überwachungstätigkeiten der britischen und US-amerikanischen Regierung zu haben. Wie sich später herausstellte, handelte es sich bei dieser Person um Edward Snowden, der mit der Weitergabe von Geheimnissen über Geheimdienstprogramme wie PRISM, Boundless Informant und Tempora einen der größten internationalen Datenschutz-Skandale der Geschichte aufdeckte. Poitras flog mit dem Guardian-Journalisten Glenn Greenwald nach Hongkong, um das Material entgegenzunehmen und den Whistleblower zu treffen. Dabei nahm sie auch ihre Kamera mit und verarbeitete die dabei entstandenen Aufnahmen zu der Dokumentation "Citizenfour". 
+					</p>
+				</div>
+				<div id="info_findingvivianmaier" class="info_movie">	
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/finding_vivian_maier.jpg">
+						<h2>Finding Vivian Maier</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>John Maloof, Charlie Siskel
+							<br /><b>Drehbuch: </b>
+							<br /><b>Mit: </b>Vivian Maier, John Maloof, Daniel Arnaud
+							<br /><b>Genre: </b>Dokumentarfilm
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>7,7/10 from 3.276 users 
+							<br /><b>Metascore: </b>74/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Vivian Maier zog 1951 im Alter von 25 Jahren von Frankreich nach New York. Von da an arbeitete die junge Frau über 40 Jahre – zwischenzeitlich auch in Chicago – als Tagesmutter. Doch neben dieser Tätigkeit pflegte die Frau eine große Leidenschaft: Sie war begeisterte Amateur-Straßenfotografin. Vivian Maier, die als exzentrische Frau galt, ging nie ohne ihre Kamera vor die Tür und unternahm auch mit den Kindern, die in ihrer Obhut waren, Streifzüge quer durch die Stadt, ohne dabei vor den weniger privilegierten Vierteln zurückzuschrecken. Das ungewöhnliche an Maier ist, dass sie ihr Hobby nie mit jemandem teilte. Erst Jahrzehnte später entdeckte Regisseur John Maloof bei einer Auktion einen wahren Schatz an Fotographien, die die Menschen New Yorks und Chicagos in ihrem großstädtischen Alltag zeigen – den niemand zuvor je gesehen hatte. Gemeinsam mit Charlie Siskel begab sich Maloof auf eine Spurensuche, um das Mysterium Vivian Maier zu entschlüsseln.
+					</p>
+				</div>
+				<div id="info_lastdaysinvietnam" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/last_days_in_vietnam.jpg">
+						<h2>Last Days in Vietnam</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Rory Kennedy
+							<br /><b>Drehbuch: </b> Mark Bailey, Keven McAlester, ...
+							<br /><b>Mit: </b>
+							<br /><b>Genre: </b>Dokumentation , Kriegsfilm , Historie
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>7,9/10 from 214 users  
+							<br /><b>Metascore: </b>88/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						In ihrer Dokumentation analysiert Regisseurin Rory Kennedy chronologisch die letzten Tage des Vietnamkrieges. Diese gestalten sich äußerst chaotisch, als nordvietnamesische Truppen in die Millionenmetropole Saigon eindringen und der südvietnamesische Widerstand nach und nach zerbricht. Als die US-amerikanischen Kräfte erkennen, dass der kommunistische Sieg unausweichlich ist, werden auch die möglichen Konsequenzen, die dieses Szenario für ihre südvietnamesischen Verbündeten mit sich bringt, deutlich. Infolgedessen nehmen einige im Land verbliebene US-Amerikaner die Evakuierung der Alliierten selbst in die Hand und versuchen, so viele Leben wie möglich zu retten. Die Filmemacherin greift für ihren Dokumentarfilm auf Archivmaterial zurück und lässt Zeitzeugen, Historiker sowie andere Experten zu Wort kommen.
+					</p>
+				</div>
+				<div id="info_virunga" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/virunga.jpg">
+						<h2>Virunga</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Orlando von Einsiedel
+							<br /><b>Drehbuch: </b>Orlando von Einsiedel
+							<br /><b>Mit: </b>
+							<br /><b>Genre: </b>Dokumentation
+							<br /><b>Nationalität: </b>Großbritannien , Republik Kongo
+							<br /><b>IMDB: </b>8,5/10 from 1.191 users   
+							<br /><b>Metascore: </b>95/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Dokumentation über die Bedrohung des Virunga-Nationalparks in der Demokratischen Republik Kongo durch die M23-Rebellen und die britischen Öl-Firma SOCO International. Eine Gruppe Naturschützer riskiert alles, um sich vor Ort für die noch wenigen verbleibenden Berggorillas einzusetzen. 
+					</p>
+				</div>
+				<div id="info_salzdererde" class="info_movie">				
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/salz_der_erde.jpg">
+						<h2>Das Salz der Erde</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Wim Wenders, Juliano Ribeiro Salgado
+							<br /><b>Drehbuch: </b>Wim Wenders, Juliano Ribeiro Salgado, ...
+							<br /><b>Mit: </b>Sebastião Salgado, Wim Wenders, Juliano Ribeiro Salgado, ...
+							<br /><b>Genre: </b>Dokumentation, Biografie
+							<br /><b>Nationalität: </b>Brasilien , Frankreich
+							<br /><b>IMDB: </b>8,2/10 from 1.323 users  
+							<br /><b>Metascore: </b>80/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						In den vergangenen vier Jahrzehnten hat der brasilianische Fotograf Sebastião Salgado auf allen Kontinenten die Spuren der sich wandelnden Welt und ihrer Geschichte in eindrucksvollen Fotoreportagen dokumentiert. Er wurde dabei Zeuge von Kriegen, Post-Konflikt-Gesellschaften, Vertreibungen, Hungersnöten und Leid. Seine Fotografien formieren und transportieren einen bestimmten Blick auf die Welt. Für Salgado stellte seine Berufung eine extreme seelische Aufgabe dar, bei der er oft nah am Rande der Verzweiflung stand. Rettung brachte wie so oft ein neues Projekt: die gigantische fotografische Dokumentation "Genesis". Darin widmet er sich den unberührten, paradiesischen Orten der Erde, von denen alles Leben seinen Ausgang nahm. Diese Fotografien sind eine Hommage an die Schönheit unseres Planeten. Sebastião Salgados Sohn Juliano Ribeiro Salgado, der seinen Vater oft bei seinen Reisen begleitete, und Filmemacher Wim Wenders, ein Bewunderer von Salgados Kunst, setzen dem Leben und der Arbeit des Fotografen mit "Das Salz der Erde" ein dokumentarisches Denkmal. 
+					</p>
+				</div>
+				<div id="info_unbroken" class="info_movie">
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/unbroken.jpg">
+						<h2>Unbroken</h2>
+						<p>
+							<b>Nominiert für 3 Oscars</b>
+							<br /><b>Regie: </b>Angelina Jolie
+							<br /><b>Drehbuch: </b>Joel Coen, Ethan Coen, ...
+							<br /><b>Mit: </b>Jack O'Connell, Takamasa Ishihara, Domhnall Gleeson, ...
+							<br /><b>Genre: </b>Kriegsfilm , Biografie , Drama
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>7,2/10 from 22.859 users  
+							<br /><b>Metascore: </b>59/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Der amerikanische Langstreckenläufer Louis Zamperini nimmt als jüngstes Mitglied des US-Olympiateams 1936 an den Olympischen Spielen in Berlin teil. Zwar gewinnt er keine Medaille, liefert sich aber ein so packendes Finalrennen, dass Adolf Hitler ihn treffen will. Vier Jahre später gilt Zamperini als großer Favorit für die Olympischen Spiele in Tokyo, die aufgrund des ausbrechenden Zweiten Weltkrieges jedoch abgesagt werden. Zamperini zieht freiwillig als Bombenschütze in den Krieg. Nach einer Bruchlandung im Pazifik können zwei weitere Soldaten und er sich auf ein Floß retten. Dort kämpfen sie 47 Tage ums Überleben, ehe sie von der japanischen Marine aufgelesen und gefangengenommen werden. Auf dem Schiff müssen sie sadistische Demütigungen über sich ergehen lassen und an Land geht das Martyrium für Louis weiter, denn der Kommandant des Kriegsgefangenenlagers, Watanabe (Miyavi), hat den Athleten auf dem Kieker… 
+					</p>
+				</div>
+				<div id="info_mrturner" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/mr_turner.jpg">
+						<h2>Mr. Turner</h2>
+						<p>
+							<b>Nominiert für 4 Oscars</b>
+							<br /><b>Regie: </b>Mike Leigh
+							<br /><b>Drehbuch: </b>Mike Leigh
+							<br /><b>Mit: </b>Timothy Spall, Paul Jesson, Dorothy Atkinson, ...
+							<br /><b>Genre: </b>Biografie , Drama
+							<br /><b>Nationalität: </b>Großbritannien
+							<br /><b>IMDB: </b>7,1/10 from 4.836 users  
+							<br /><b>Metascore: </b>95/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Der Maler William Turner (Timothy Spall) führt um das Jahr 1825 ein bewegtes Leben: Neben seiner Kunst der Landschaftsmalerei widmet er sich Reisen, Bordellbesuchen und Zusammenkünften mit dem Landadel. Der Künstler kostet seine Freiheiten aus, an der Londoner Royal Academy of Arts tritt er sehr großspurig auf. Er ist alles andere als diplomatisch und mit seinem eigenwilligen Verhalten stößt Turner so manches Mitglied der ehrenwerten Gesellschaft vor den Kopf. Und auch im Privatleben ist der Umgang mit dem kauzigen Maler überaus schwierig. Er teilt die Wohnung mit seinem Vater William (Paul Jesson) und seiner Haushälterin Hannah Danby (Dorothy Atkinson), deren innige Zuneigung er schamlos ausnutzt. Als der Vater schließlich stirbt, gerät William Jr. in eine tiefe künstlerische und persönliche Krise.
+					</p>
+				</div>
+				<div id="info_interstellar" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/interstellar.jpg">
+						<h2>Interstellar</h2>
+						<p>
+							<b>Nominiert für 5 Oscars</b>
+							<br /><b>Regie: </b>Christopher Nolan
+							<br /><b>Drehbuch: </b>Jonathan Nolan, Christopher Nolan
+							<br /><b>Mit: </b>Matthew McConaughey, Anne Hathaway, Jessica Chastain, ...
+							<br /><b>Genre: </b>Sci-Fi , Drama
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>8,9/10 from 408.043 users 
+							<br /><b>Metascore: </b>74/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Was Wissenschaftler, Politiker und Aktivisten seit Jahrzehnten prophezeien, ist eingetreten: Die Menschheit steht kurz davor, an einer globalen Nahrungsknappheit zugrunde zu gehen. Die einzige Hoffnung der Weltbevölkerung besteht in einem geheimen Projekt der US-Regierung, das von dem findigen Wissenschaftler Professor Brand (Michael Caine) geleitet wird. Der Plan sieht vor, eine Expedition in ein anderes Sternensystem zu starten, wo bewohnbare Planeten, Rohstoffe und vor allem Leben vermutet werden. Der Ingenieur und ehemalige NASA-Pilot Cooper (Matthew McConaughey) und Brands Tochter Amelia (Anne Hathaway) führen die Besatzung an, die sich auf eine Reise ins Ungewisse begibt: Wurmlöcher sind so gut wie unerforscht und niemand kann mit Sicherheit sagen, was die Crew auf der anderen Seite erwartet. Ebenso ist unsicher, ob und wann Cooper und Brand wieder auf die Erde zurückkehren. Coopers Kinder, Tochter Murph (Mackenzie Foy) und Sohn Tom (Timothée Chalamet), müssen mit Schwiegervater Donald (John Lithgow) zurückbleiben und auf seine Wiederkehr hoffen...
+					</p>
+				</div>
+				<div id="info_maleficent" class="info_movie">				
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/maleficent.jpg">
+						<h2>Maleficent</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Robert Stromberg
+							<br /><b>Drehbuch: </b>Linda Woolverton
+							<br /><b>Mit: </b>Angelina Jolie, Elle Fanning, Sharlto Copley
+							<br /><b>Genre: </b>Fantasy
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>7,1/10 from 175.678 users 
+							<br /><b>Metascore: </b>56/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Maleficent ist eine schöne, warmherzige junge Fee (Isobelle Molloy), die in einem friedvollen Waldkönigreich lebt. Eines Tages verirrt sich Stefan (Michael Higgins), ein Junge aus der benachbarten Menschenwelt, in der es weit weniger friedlich zugeht, in Maleficents Heimat. Die Fee und der Mensch werden Freunde und es kommen irgendwann auch romantische Gefühle zwischen ihnen auf, doch schließlich zieht es Stefan zurück in das Reich der Menschen. Dessen König Henry (Kenneth Cranham) will die Feenwelt um jeden Preis erobern, doch gegen Maleficents (nun: Angelina Jolie) magische Kräfte kommt er nicht an. Als alle anderen Pläne versagen, verspricht er demjenigen Thron und Tochter, der es fertigbringt, die scheinbar unbesiegbare Fee in die Knie zu zwingen. Stefan (nun: Sharlto Copley) nimmt die Herausforderung an und begibt sich nach langer Abwesenheit erneut in die Wälder des Feenwelt. Er täuscht Maleficent Liebe vor und raubt ihr im Schlaf ihre imposanten Feenflügel. Die so Betrogene ist tief traurig und verbittert, und als sie Jahre später die Gelegenheit bekommt, nimmt sie fürchterliche Rache. Sie verflucht Aurora, die Tochter des inzwischen zum König gekrönten Stefan: Das Mädchen soll am Tag nach seinem 16. Geburtstag in ewigen Schlaf fallen...
+					</p>
+				</div>
+				<div id="info_guardiansofthegalaxy" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/guardians_of_the_galaxy.jpg">
+						<h2>Guardians of the Galaxy</h2>
+						<p>
+							<b>Nominiert für 2 Oscars</b>
+							<br /><b>Regie: </b>James Gunn
+							<br /><b>Drehbuch: </b>James Gunn, Nicole Perlman, ...
+							<br /><b>Mit: </b>Chris Pratt, Vin Diesel, Bradley Cooper, ...
+							<br /><b>Genre: </b>Sci-Fi , Action
+							<br /><b>Nationalität: </b>USA , Großbritannien
+							<br /><b>IMDB: </b>8,2/10 from 389.443 users 
+							<br /><b>Metascore: </b>7/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Peter Quill (Chris Pratt), der als Kind in den Achtzigerjahren von der Erde entführt wurde, hält sich für den größten Outlaw der Galaxie und nennt sich hochtrabend Star-Lord. Doch nachdem er eine geheimnisvolle Kugel gestohlen hat, steckt er plötzlich so richtig im Schlamassel, wird er das Opfer einer unerbittlichen Kopfgeldjagd. Ronan the Accuser (Lee Pace) hat es auf das Artefakt abgesehen und nichts Gutes damit im Sinn – die Ziele des mächtigen Bösewichts bedrohen die Sicherheit des Universums! Um dem hartnäckigen Ronan und seinen Schergen zu entgehen, ist Quill gezwungen, einen nicht gerade einfach einzuhaltenden Waffenstillstand mit einem Quartett von ungleichen Außenseitern einzugehen. Dazu gehören der waffenliebende Waschbär Rocket (gesprochen von Bradley Cooper), der Baummensch Groot (Stimme: Vin Diesel), die tödliche und rätselhafte Gamora (Zoe Saldana) und der rachsüchtige Drax the Destroyer (Dave Bautista). Als Peter dann die wahre, gefährliche Macht der Kugel kennenlernt, muss er sein Bestes geben, um die zusammengewürfelten Rivalen für einen letzten, verzweifelten Widerstand zu vereinen. Er muss eine Helden-Truppe aus ihnen machen, denn das Schicksal der Galaxie steht auf dem Spiel.
+					</p>
+				</div>
+				<div id="info_planetderaffenrevolution" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/planet_der_affen_revolution.jpg">
+						<h2>Planet der Affen: Revolution</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Matt Reeves
+							<br /><b>Drehbuch: </b>Mark Bomback, Rick Jaffa, ...
+							<br /><b>Mit: </b>Andy Serkis, Jason Clarke, Gary Oldman, ...
+							<br /><b>Genre: </b>Sci-Fi , Action
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>7,8/10 from 215.568 users 
+							<br /><b>Metascore: </b>79/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Zehn Jahre sind vergangen, seit das freigesetzte Virus den Großteil der Menschheit ausgerottet hat. Der übrig gebliebene Rest haust in Ruinen der ehemaligen Zivilisation und lebt ein zurückgezogenes Leben im Untergrund. Eine Expedition in die Wälder, angeführt von Malcolm (Jason Clarke), trifft auf das von Caesar (Andy Serkis) angeführte Affenvolk. Malcolm und Ellie (Keri Russell) erwirken ein Friedensabkommen mit Caesar, das jedoch von kurzer Dauer ist. Denn der charismatische Anführer Dreyfus (Gary Oldman) hetzt gegen die Herrschaft der Affen und macht diese für die Beinahe-Ausrottung der Menschen verantwortlich. Dreyfus sammelt eine gewaltbereite Gefolgschaft um sich und provoziert damit einen entscheidenden Kampf zwischen Menschen und Affen, der die Vorherrschaft ein für alle Mal klären wird. 
+					</p>
+				</div>
+				<div id="info_returnofthefirstavenger" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/return_of_the_first_avenger.jpg">
+						<h2>Captain America 2: Return of the first Avenger</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Anthony Russo, Joe Russo
+							<br /><b>Drehbuch: </b>Christopher Markus, Stephen McFeely, ...
+							<br /><b>Mit: </b>Chris Evans, Samuel L. Jackson, Scarlett Johansson, ...
+							<br /><b>Genre: </b>Abenteuer , Action , Sci-Fi
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>7,8/10 from 313.435 users   
+							<br /><b>Metascore: </b>70/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Nachdem er mit den anderen Avengers New York verteidigt hat, zieht sich Steve Rogers aka Captain America (Chris Evans) nach Washington zurück. Dort hat er nach wie vor Probleme, sich an das moderne Leben zu gewöhnen. Doch er muss zurück in den Einsatz, als ein S.H.I.E.L.D.-Agent Ziel eines Angriffs wird, der den Beginn eines größeren, die ganze Welt bedrohenden Plans markiert. Steve holt also seinen Kampfanzug aus dem Schrank und versucht, die Verschwörung aufzuklären. Hilfe bekommt er von Black Widow (Scarlett Johansson) und dem Neuzugang in der Helden-Truppe, dem Soldaten Falcon (Anthony Mackie). Die Mission ist lebensgefährlich, ständig sind die drei im Visier von Attentätern. Doch die größte Gefahr geht vom Winter Soldier (Sebastian Stan) aus – einem Gegner, dessen Identität sich erst nach und nach enthüllt…
+					</p>
+				</div>
+				<div id="info_xmenzukunftistvergangenheit" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/x_men_zukunft_ist_vergangenheit.jpg">
+						<h2>X-Men: Zukunft ist Vergangenheit</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Bryan Singer
+							<br /><b>Drehbuch: </b>Simon Kinberg, Jane Goldman, ...
+							<br /><b>Mit: </b>Patrick Stewart, Ian McKellen, Hugh Jackman 
+							<br /><b>Genre: </b>Action , Sci-Fi
+							<br /><b>Nationalität: </b>Action , Sci-Fi
+							<br /><b>IMDB: </b>8,1/10 from 341.939 users 
+							<br /><b>Metascore: </b>74/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						In der Zukunft stehen die Mutanten kurz vor dem Aussterben, weil sie von Killer-Robotern gejagt und getötet werden: den Sentinels. Aufgrund der Bedrohung arbeiten die einstigen Gegner Magneto (Ian McKellen) und Charles Xavier (Patrick Stewart) zusammen – ihr Plan sieht vor, den Terror durch die Sentinels gar nicht erst zuzulassen. Dazu schicken sie Wolverines (Hugh Jackman) Bewusstsein mit Hilfe von Kitty Pryde (Ellen Page) in die Vergangenheit, da sich sein Geist von den Folgen einer solchen Zeitreise erholen kann. In der Vergangenheit soll Wolverine eine Tat Mystiques (Jennifer Lawrence) verhindern, die den Bau der Sentinels erst möglich machte; der Eingriff würde also die Zukunft im Sinne der Mutanten verändern. Doch dafür muss Wolverine erst ein Team aus Mutanten zusammenstellen – was sich als schwierig erweist. Der junge Charles Xavier (James McAvoy) etwa ist in einem miserablen psychischen Zustand…
+					</p>
+				</div>
+				<div id="info_canasongsaveyourlife" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/can_a_song_save_your_life.jpg">
+						<h2>Can A Song Save Your Life?</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>John Carney
+							<br /><b>Drehbuch: </b>John Carney
+							<br /><b>Mit: </b>Keira Knightley, Mark Ruffalo, Adam Levine, ...
+							<br /><b>Genre: </b>Drama , Romanze , Musik
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>7,5/10 from 52.507 users  
+							<br /><b>Metascore: </b>62/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Die junge Musikerin Gretta (Keira Knightley) sucht in New York ihr Glück. Während sie gerade daran arbeitet, ihre Musikkarriere in Gang zu bringen, verlässt sie allerdings ihr langjähriger Freund Dave (Adam Levine) für einen erfolgversprechenden Solo-Vertrag bei einem großen Plattenlabel. Gretta trauert, bis sie schließlich von Dan (Mark Ruffalo) entdeckt wird, einem in Verruf geratenen Plattenproduzenten. Er sieht Gretta während eines Konzerts auf einer kleinen Bühne im New Yorker East Village – und ist sofort von ihrem großen Talent überwältigt. Zusammen wollen beide den Neuanfang stemmen. Sie arbeiten an einem Album, das sie an quirligen Orten der Großstadt aufnehmen anstatt im Studio. So kommen sich Gretta und Dan schnell näher. Aus der glücklichen Begegnung entsteht eine Beziehung gegenseitiger Unterstützung und Bestätigung, die nicht nur das Leben der begabten Musikerin, sondern auch den strauchelnden Produzenten grundlegend verändert... 
+					</p>
+				</div>
+				<div id="info_glencampbellillbeme" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/glen_campbell_ill_be_me.jpg">
+						<h2>Glen Campbell: I'll be me</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>James Keach
+							<br /><b>Drehbuch: </b>
+							<br /><b>Mit: </b>Glen Campbell, Paul McCartney, Keith Urban, ...
+							<br /><b>Genre: </b>Dokumentation , Biografie , Musik
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>8,6/10 from 69 users  
+							<br /><b>Metascore: </b>79/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Filmemacher James Keach folgt der Country-Legende Glen Campbell auf seiner Abschiedstournee in den USA, Australien und Europa. Die Tour wird überschattet von Campbells erstarkendem Alzheimer, der 2011 bei ihm diagnostiziert wurde. Wenn er nicht gerade auf der Bühne steht und sich der Musik widmet, die sein Leben ist, ist er ständig im Kreise seiner Familie, die ihm genauso am Herzen liegt und die ihm im Kampf mit der Krankheit zur Seite steht. 
+					</p>
+				</div>
+				<div id="info_legomovie" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/lego_movie.jpg">
+						<h2>The LEGO Movie</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Phil Lord, Christopher Miller
+							<br /><b>Drehbuch: </b>Phil Lord, Christopher Miller, ...
+							<br /><b>Mit: </b>Chris Pratt, Will Ferrell, Elizabeth Banks, ...
+							<br /><b>Genre: </b>Abenteuer , Animation
+							<br /><b>Nationalität: </b>USA , Australien , Dänemark
+							<br /><b>IMDB: </b>7,9/10 from 180.123 users 
+							<br /><b>Metascore: </b>83/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Der gutmütige Emmet (Stimme: Chris Pratt) wird eines Tages von der abenteuerlustigen Wyldstyle (Elizabeth Banks) entführt. Sie glaubt, in dem Normalo den von einer Prophezeiung angekündigten Meisterbauer gefunden zu haben. Unter der Führung des alten Mystikers Vitruvius (Morgan Freeman) soll Emmet gemeinsam mit Batman (Will Arnett) und Wyldstyle den skrupellosen Bösewicht Lord Business (Will Ferrell) aufhalten. Der möchte mit Hilfe zahlloser finsterer Schergen das Universum zusammenkleben – und somit die LEGO-Welt zerstören. Obwohl Emmet darauf beharrt, dass er nicht der Auserwählte ist, glaubt insbesondere Wyldstyle an seine außergewöhnlichen Fähigkeiten. Ebenfalls mit von der heldenhaften Partie sind Pirat Eisenbart (Nick Offerman), Weltraumfahrer Benny (Charlie Day) und das liebreizende Einhorn Kitty (Alison Brie).
+					</p>
+				</div>
+				<div id="info_beyondthelights" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/beyond_the_lights.jpg">
+						<h2>Beyond the Lights</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Gina Prince-Bythewood
+							<br /><b>Drehbuch: </b>Gina Prince-Bythewood
+							<br /><b>Mit: </b>Gugu Mbatha-Raw, Nate Parker, Minnie Driver, ...
+							<br /><b>Genre: </b>Drama , Romanze
+							<br /><b>Nationalität: </b>USA
+							<br /><b>IMDB: </b>6,6/10 from 1.863 users 
+							<br /><b>Metascore: </b>73/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Seit ihrer Kindheit wird Noni Jean (Gugu Mbatha-Raw) auf eine Karriere als Sängerin vorbereitet. Ihre Mutter (Minnie Driver) ermöglicht ihr viel, verlangt ihr aber auch alles ab. Und tatsächlich gelingt Noni schließlich der große Durchbruch, der sogar mit einem Grammy gekrönt wird. Doch dieses neue Leben im Rampenlicht setzt ihr schnell schwer zu, muss sie doch jemanden verkörpern, der sie selbst eigentlich gar nicht ist. Voller Verzweiflung versucht sie sich daher eines Abends sogar vom Balkon zu stürzen, wird aber in letzter Sekunde von dem jungen Polizisten Kaz (Nate Parker) gerettet. Er weiß aus eigener Erfahrung, wie es ist, zu etwas gertrieben zu werden, hinter dem man selbst nicht steht. Sein Vater (Danny Glover) drängt ihn, neben seiner Karriere als Gesetzeshüter, auch in die Politik einzusteigen. Entsprechend schwer haben es die beiden, als sie sich mehr und mehr ineinander verlieben und das erste Mal das tun, was sie selber wollen. 
+					</p>
+				</div>
+				<div id="info_hobbitschlachtderfuenfheere" class="info_movie">					
+					<div class="info_stats">
+						<img class="info_poster" align="left" src="img/movies/hobbit_schlacht_der_fuenf_heere.jpg">
+						<h2>Der Hobbit - Die Schlacht der fünf Heere</h2>
+						<p>
+							<b>Nominiert für 1 Oscar</b>
+							<br /><b>Regie: </b>Peter Jackson
+							<br /><b>Drehbuch: </b>Fran Walsh, Philippa Boyens, ...
+							<br /><b>Mit: </b>Ian McKellen, Martin Freeman, Richard Armitage, ...
+							<br /><b>Genre: </b>Action , Fantasy , Abenteuer
+							<br /><b>Nationalität: </b>USA , Neuseeland
+							<br /><b>IMDB: </b>7,7/10 from 176.468 users  
+							<br /><b>Metascore: </b>59/100
+							<br clear="all">
+						</p>
+					</div>
+					<p class="info_zusammenfassung">
+						Als die von Thorin Eichenschild (Richard Armitage) angeführte Zwergen-Truppe ihre Heimat von Smaug (Originalstimme: Benedict Cumberbatch) zurückfordert, entfesselt sie die zerstörerische Kraft des Drachen. Keiner ist mehr sicher vor dem zornigen Ungetüm, das die Seestadt Esgaroth samt Bevölkerung angreift. Ein zermürbender Kampf wird entfacht, der bei allen Beteiligten Spuren hinterlässt. Aber Thorin verweigert den Seestädtern jegliche Hilfe und auch das Gold, das der Drache gestohlen hatte, will er nicht teilen. Hobbit Bilbo (Martin Freeman) versucht, zwischen den Parteien zu vermitteln, doch vergeblich. Thorin hält ihn für einen Verräter und auch Gandalf (Ian McKellen) kann nichts mehr ausrichten. Es wird aufgerüstet und bald stehen sich die Armeen gegenüber – dabei hat bereits eine noch viel dunklere Bedrohung ihr Augenmerk auf den Einsamen Berg gerichtet: Der dunkle Herrscher Sauron kehrt nach Mittelerde zurück und sendet mehrere Legionen Orks in Richtung Erebor. Die Zwerge, Elben und Menschen können ihrer Vernichtung nur entgehen, wenn sie ihre Konflikte außer Acht lassen. Die Schlacht der Fünf Heere beginnt... 
+					</p>
+				</div>
+				<div id="info_aya" class="info_movie">
+					<div class="info_stats">
+						<h2>Aya</h2>
+					</div>
+				</div>
+				<div id="info_phonecall" class="info_movie">
+					<div class="info_stats">
+						<h2>The Phone Call</h2>
+					</div>
+				</div>
+				<div id="info_pavaneh" class="info_movie">
+					<div class="info_stats">
+						<h2>Pavanah</h2>
+					</div>
+				</div>
+				<div id="info_boogalooandgraham" class="info_movie">
+					<div class="info_stats">
+						<h2>Boogaloo and Graham</h2>
+					</div>
+				</div>
+				<div id="info_butterlamp" class="info_movie">
+					<div class="info_stats">	
+						<h2>Butterlamp</h2>
+					</div>
+				</div>
+				<div id="info_crisishotlineveteranspress1" class="info_movie">
+					<div class="info_stats">
+						<h2>Crisis Hotline: Veterans Press 1</h2>
+					</div>
+				</div>
+				<div id="info_thereaper" class="info_movie">
+					<div class="info_stats">
+						<h2>The Reaper (La Parka)</h2>
+					</div>
+				</div>
+				<div id="info_whiteearth" class="info_movie">
+					<div class="info_stats">
+						<h2>White Earth</h2>
+					</div>
+				</div>
+				<div id="info_joanna" class="info_movie">
+					<div class="info_stats">
+						<h2>Joanna</h2>
+					</div>
+				</div>
+				<div id="info_ourcurse" class="info_movie">
+					<div class="info_stats">
+						<h2>Our Curse</h2>
+					</div>
+				</div>
+				<div id="info_liebegehtdurchdenmagen" class="info_movie">
+					<div class="info_stats">
+						<h2>Liebe geht durch den Magen</h2>
+					</div>
+				</div>
+				<div id="info_damkeeper" class="info_movie">
+					<div class="info_stats">
+						<h2>The Dam Keeper</h2>
+					</div>
+				</div>
+				<div id="info_biggerpicture" class="info_movie">
+					<div class="info_stats">
+						<h2>The Bigger Picturer</h2>
+					</div>
+				</div>
+				<div id="info_meandmoulton" class="info_movie">
+					<div class="info_stats">
+						<h2>Me and Moulton</h2>
+					</div>
+				</div>
+				<div id="info_singlelife" class="info_movie">
+					<div class="info_stats">
+						<h2>A Single Life</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
