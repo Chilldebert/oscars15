@@ -49,6 +49,15 @@ var handler = {											// Event handlers
 	},
 	clickSidebarSubmit : function() {
 		if(num.oscars != 24) alert("DU hast noch nicht alle Kandidaten gewählt");
+		else {
+			$.post("cheng", 
+			{
+				user: string.user,
+				oscars: array.oscars
+			}, function(data,status){
+				alert("Data: " + data + "\nStatus: " + status);
+			});
+		}
 	},
 	clickMovieCard : function() {
 		var id = $(this).attr('id');
@@ -59,7 +68,7 @@ var handler = {											// Event handlers
 		category = oscars.remove(category, 'main_');
 		// string[category] = string.movie;
 		array.oscars[category] = string.movie;
-		console.log(array.oscars);
+		// console.log(array.oscars);
 		//vis.showInfo();
 		update.all();
 	},
@@ -90,7 +99,7 @@ var update = {											// Updates variables/ website, ...
 	all : function() {
 		update.highlightMovieCard();
 		check.selected();
-		console.log("string.category: "+string.category);
+		// console.log("string.category: "+string.category);
 	},
 	highlightMovieCard : function() {
 		var highlighted;
